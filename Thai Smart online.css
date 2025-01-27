@@ -87,7 +87,7 @@ body {
     .menu {
         display: none;
         flex-direction: column;
-        background-color: #fd7921;
+        background-color: #ffffff;
         position: absolute;
         top: 100%;
         right: 0;
@@ -96,7 +96,8 @@ body {
     }
 
     .menu a {
-        margin: 10px 0;
+        color: rgb(0, 0, 0);
+        margin: 7px 0;
         text-align: center;
     }
 
