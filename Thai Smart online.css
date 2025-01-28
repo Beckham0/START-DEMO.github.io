@@ -402,9 +402,9 @@ a {
 }
 
 .buttons6 img {
-    width: 500px; /* ขนาดคงที่ของ container */
-    height: 350px;
-    overflow: hidden; 
+    width: 100%; 
+    height: auto;
+    justify-content: center;
 }
 
 .buttons7 {
