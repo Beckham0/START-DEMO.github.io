@@ -409,7 +409,7 @@ a {
 
 .buttons7 {
     flex: 1 1 calc(50% - 10px); 
-    min-width: 300px;           
+    min-width: 400px;           
     padding: 20px;
     text-align: center;
 
@@ -490,20 +490,20 @@ a {
             border-radius: 8px;
             box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
             margin: 10px;
-            max-width: 400px;
+            max-width: 350px;
             overflow: hidden;
             text-align: center;
         }
         .service-card1{
             background-color: #ffffff;
             border-radius: 8px;
-            max-width: 400px;
+            max-width: 600px;
             overflow: hidden;
             text-align: center;
         }
 
         .service-card img {
-            width: 70%;
+            width: 90%;
             height: auto;
             border-radius: 5px;
             color: white;
