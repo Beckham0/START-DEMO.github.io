@@ -99,30 +99,42 @@ body {
 
 /* Responsive Styles */
 @media (max-width: 768px) {
-    .menu {
-        display: none;
-        flex-direction: column;
-        background-color: #fd7921;
-        position: absolute;
-        top: 100%;
-        right: 0;
-        left: 0;
-        padding: 10px;
-    }
+  .menu {
+      display: none;
+      flex-direction: column;
+      background-color: #ffffff;
+      position: absolute;
+      top: 100%;
+      right: 0;
+      left: 0;
+      padding: 10px;
+  }
 
-    .menu a {
-        margin: 10px 0;
-        text-align: center;
-    }
+  .window {
+    color: #ffffff;
+    background-color: #000;
+}
 
-    .menu-toggle {
-        display: flex;
-    }
+  .menu a {
+      color: rgb(0, 0, 0);
+      margin: 7px 0;
+      text-align: start;
+  }
+
+  .menu a:hover {
+      color: #ffffff;
+      background-color: #000;
+      
+  }
+
+  .menu-toggle {
+      display: flex;
+  }
 }
 
 /* Show menu when active */
 .menu.active {
-    display: flex;
+  display: flex;
 }
 
 
