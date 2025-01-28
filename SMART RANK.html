@@ -23,8 +23,10 @@
             </button>
     </header> 
 
-    <script src="menu.js"></script>
-    
+    <script src="menu.js">document.querySelector('.menu-toggle').addEventListener('click', () => {
+      document.querySelector('.menu').classList.toggle('active');
+  });</script>
+
 </body>
 <footer class="footer">
     <div class="container2">

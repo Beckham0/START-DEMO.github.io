@@ -191,6 +191,8 @@
         </div>
     </footer>
 
-    <script src="Menu.js"></script>
+    <script src="Menu.js">document.querySelector('.menu-toggle').addEventListener('click', () => {
+        document.querySelector('.menu').classList.toggle('active');
+    });</script>
 </body>
 </html>
