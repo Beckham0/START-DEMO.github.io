@@ -98,7 +98,13 @@ body {
     .menu a {
         color: rgb(0, 0, 0);
         margin: 7px 0;
-        text-align: center;
+        text-align: start;
+    }
+
+    .menu a:hover {
+        color: #ffffff;
+        background-color: #000;
+        
     }
 
     .menu-toggle {
