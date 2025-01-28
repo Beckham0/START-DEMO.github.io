@@ -396,7 +396,7 @@ a {
 
 .buttons6 {
     flex: 1 1 calc(50% - 10px); 
-    min-width: 300px;           
+    min-width: 400px;           
     padding: 20px;
     text-align: center;
 }
@@ -409,10 +409,9 @@ a {
 
 .buttons7 {
     flex: 1 1 calc(50% - 10px); 
-    min-width: 400px;           
+    min-width: 300px;           
     padding: 20px;
     text-align: center;
-
 }
 
 .buttons71 {
@@ -542,6 +541,150 @@ a {
         .service-card button:hover {
             background-color: #008c9e;
         }
+
+******************************************************************************* 
+
+body4 {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+.section {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    text-align: center;
+    background-color: #ff5722;
+    padding: 20px;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.pr-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    gap: 20px;
+
+    margin: 20px;
+    border-radius: 8px;
+}
+
+.pr-image {
+    flex: 1 1 calc(50% - 10px); 
+    min-width: 300px;           
+    padding: 20px;
+    text-align: center;
+}
+
+.pr-image img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.pr-content {
+    flex: 1 1 calc(50% - 10px); 
+    min-width: 300px;           
+    padding: 20px;
+    text-align: center;
+}
+
+.pr-content h2 {
+    color: #ff5722;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.pr-content p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.pr-content ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.pr-content ul li {
+    background-color: #ff5722;
+    color: white;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pr-content ul li span {
+    font-size: 16px;
+}
+
+.pr-content button {
+    background-color: #00bcd4;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 10px 20px;
+    margin-top: 15px;
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+.pr-content button:hover {
+    background-color: #008c9e;
+}
+ 
+*******************************************************************************PARTNERS
+
+.PARTNERS-image {
+    width: 100%; 
+    height: auto;
+    justify-content: center;
+}
+
+.PARTNERS-image img {
+    width: 1300px;
+    height: 1150px;
+    overflow: hidden; 
+}
+
+.image-row {
+    display: flex;
+    gap: 16px; /* ระยะห่างระหว่างคอลัมน์ */
+    justify-content: center;
+  }
+  
+  .image-column {
+    flex: 1; /* แบ่งพื้นที่เท่าๆ กันในแต่ละคอลัมน์ */
+    max-width: 300px; /* ขนาดสูงสุดของแต่ละคอลัมน์ */
+  }
+  
+  .image-column img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px; /* มุมโค้งมน */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* เงาปกติ */
+    object-fit: cover;
+    transition: box-shadow 0.3s ease, transform 0.3s ease; /* เพิ่ม transition */
+  }
+  
+  .image-column img:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* เงาเข้มขึ้นเมื่อชี้เมาส์ */
+    transform: scale(1.05); /* ขยายรูปเล็กน้อย */
+  }
+
+
+
+
 
 ******************************************************************************* ท้าย
 
