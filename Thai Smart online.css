@@ -513,7 +513,8 @@ a {
         }
 
         .service-card img:hover {
-            transform: scale(1.2);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* เงาเข้มขึ้นเมื่อชี้เมาส์ */
+            transform: scale(1.05); /* ขยายรูปเล็กน้อย */
         }
 
         .service-card h3 {
