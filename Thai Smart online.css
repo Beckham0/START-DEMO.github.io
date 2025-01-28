@@ -653,9 +653,9 @@ body4 {
 }
 
 .PARTNERS-image img {
-    width: 1300px;
-    height: 1150px;
-    overflow: hidden; 
+    width: 100%; 
+    height: auto;
+    justify-content: center;
 }
 
 .image-row {
@@ -674,8 +674,7 @@ body4 {
     height: auto;
     border-radius: 8px; /* มุมโค้งมน */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* เงาปกติ */
-    object-fit: cover;
-    transition: box-shadow 0.3s ease, transform 0.3s ease; /* เพิ่ม transition */
+    
   }
   
   .image-column img:hover {
