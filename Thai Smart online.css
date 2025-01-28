@@ -389,49 +389,57 @@ a {
 }
 
 .buttons5 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 1rem;
+    display: flex;
+    flex-wrap: wrap; /* อนุญาตให้ย้ายไปแถวถัดไปเมื่อพื้นที่ไม่พอ */
+    gap: 10px;  
 }
 
 .buttons6 {
-    display: grid;
-    grid-template-columns: 1fr;
-    column-gap: 1rem;
-    margin: 1rem 0;
-    padding: 0.1px 0.1px;
-    max-width: 500px;
-    margin: 0 auto;
+    flex: 1 1 calc(50% - 10px); 
+    min-width: 300px;           
+    padding: 20px;
+    text-align: center;
 }
 
 .buttons6 img {
-    width: 100%;
-    /* ขยายภาพให้เต็มพื้นที่ที่กำหนด */
-    object-fit: cover;
-    /* ปรับภาพให้เต็มพื้นที่ โดยไม่เสียสัดส่วน */
+    width: 500px; /* ขนาดคงที่ของ container */
+    height: 350px;
+    overflow: hidden; 
 }
 
 .buttons7 {
+    flex: 1 1 calc(50% - 10px); 
+    min-width: 300px;           
+    padding: 20px;
+    text-align: center;
 
-    padding: 20px 50px;
 }
 
-.buttons7 h1 {
+.buttons71 {
+    display: grid;
+    grid-template-columns: 1fr;
+    column-gap: 1rem;
+    max-width: 600px;
+    margin: 0 auto;
+
+}
+
+.buttons71 h1 {
     font-size: 36px;
     margin: 0 0 20px;
     color: #000;
 }
 
-.buttons7 .highlight {
+.buttons71 .highlight {
     color: #ff6600;
 }
 
-.buttons7 p {
+.buttons71 p {
     font-size: 20px;
     color: #000000;
 }
 
-.buttons7 p2 {
+.buttons71 p2 {
     font-size: 17px;
     color: #000000;
 
