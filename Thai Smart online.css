@@ -148,7 +148,7 @@ a {
 
 .menu {
     display: flex;
- 
+    gap: 20px;
 }
 
 .menu.active {
@@ -217,6 +217,7 @@ a {
         left: 0;
         padding: 10px;
         font-size: small;
+        gap: 0px;
     }
 
     .menu a {
