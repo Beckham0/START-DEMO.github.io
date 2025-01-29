@@ -1,6 +1,8 @@
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: "K2D", serif !important;
+    font-weight: 400;
+    font-style: normal;
 }
 header {
     background-color: #fe7009 !important;
@@ -118,7 +120,11 @@ a {
 
 
 
-
+.image_slide{
+    height: 500px;
+     background-color: #ff5719;
+     height: 80.6vh;
+}
 .Web-header {
     background-color: #fd7921;
     color: white;
@@ -142,7 +148,7 @@ a {
 
 .menu {
     display: flex;
-    gap: 20px;
+ 
 }
 
 .menu.active {
@@ -210,17 +216,18 @@ a {
         right: 0;
         left: 0;
         padding: 10px;
+        font-size: small;
     }
 
     .menu a {
-        color: rgb(0, 0, 0);
-        margin: 7px 0;
+        color: #c36;
+        padding: inherit;
         text-align: start;
     }
 
     .menu a:hover {
         color: #ffffff;
-        background-color: #000;
+        background-color: #33373da0;
         
     }
 
@@ -246,7 +253,6 @@ a {
 .item1 {
     text-align: center;
     padding: 10px;
-    max-width: 1140px;
     margin: 0 auto;
 
 }
