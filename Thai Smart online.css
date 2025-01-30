@@ -4,6 +4,7 @@ body {
     font-weight: 400;
     font-style: normal;
 }
+
 header {
     background-color: #fe7009 !important;
 }
@@ -120,11 +121,12 @@ a {
 
 
 
-.image_slide{
+.image_slide {
     height: 500px;
-   
-     height: 80.6vh;
+
+    height: 80.6vh;
 }
+
 .Web-header {
     background-color: #fd7921;
     color: white;
@@ -169,7 +171,7 @@ a {
 
 .menu a:hover {
     color: #2fc4ff;
-  
+
 }
 
 /* Hamburger menu toggle button */
@@ -235,7 +237,7 @@ a {
     .menu a:hover {
         color: #ffffff;
         background-color: #33373da0;
-        
+
     }
 
     .menu-toggle {
@@ -303,25 +305,36 @@ a {
     flex-wrap: wrap;
     gap: 1rem;
     padding: 10px;
- 
+
     margin: 0 auto;
-    justify-content: center; /* จัดปุ่มให้อยู่ตรงกลาง */
-    align-items: center; /* จัดปุ่มให้อยู่แนวกลาง */
+    justify-content: center;
+    /* จัดปุ่มให้อยู่ตรงกลาง */
+    align-items: center;
+    /* จัดปุ่มให้อยู่แนวกลาง */
 }
 
-.buttons1, .buttons2, .buttons3 {
+.buttons1,
+.buttons2,
+.buttons3 {
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
-    justify-content: center; /* จัดปุ่มให้อยู่ตรงกลาง */
+    justify-content: center;
+    /* จัดปุ่มให้อยู่ตรงกลาง */
 
 }
 
-.buttons1 a, .buttons2 a, .buttons3 a {
-    width: 400px; /* กำหนดความกว้างให้เท่ากัน */
-    flex: 1 1 calc(33.33% - 1rem); /* ปุ่มมีขนาด 1/3 ของบรรทัด */
-    max-width: 400px; /* จำกัดขนาดปุ่มสูงสุด */
-    background-color: black; /* Default color for buttons1 */
+.buttons1 a,
+.buttons2 a,
+.buttons3 a {
+    width: 400px;
+    /* กำหนดความกว้างให้เท่ากัน */
+    flex: 1 1 calc(33.33% - 1rem);
+    /* ปุ่มมีขนาด 1/3 ของบรรทัด */
+    max-width: 400px;
+    /* จำกัดขนาดปุ่มสูงสุด */
+    background-color: black;
+    /* Default color for buttons1 */
     color: white;
     padding: 0.5rem;
     border-radius: 6px;
@@ -383,26 +396,27 @@ a {
 
 .buttons5 {
     display: flex;
-    flex-wrap: wrap; /* อนุญาตให้ย้ายไปแถวถัดไปเมื่อพื้นที่ไม่พอ */
-    gap: 10px;  
+    flex-wrap: wrap;
+    /* อนุญาตให้ย้ายไปแถวถัดไปเมื่อพื้นที่ไม่พอ */
+    gap: 10px;
 }
 
 .buttons6 {
-    flex: 1 1 calc(50% - 10px); 
-    min-width: 300px;           
+    flex: 1 1 calc(50% - 10px);
+    min-width: 300px;
     padding: 20px;
     text-align: center;
 }
 
 .buttons6 img {
-    width: 100%; 
+    width: 100%;
     height: auto;
     justify-content: center;
 }
 
 .buttons7 {
-    flex: 1 1 calc(50% - 10px); 
-    min-width: 300px;           
+    flex: 1 1 calc(50% - 10px);
+    min-width: 300px;
     padding: 20px;
     text-align: center;
 }
@@ -460,85 +474,102 @@ a {
 }
 
 
-*************************************************** บริการเเนะนำ
-
-.container {
+*************************************************** บริการเเนะนำ .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
     text-align: center;
 }
 
-        .services {
-            flex-wrap: wrap;
-            justify-content: center;
-            padding: 50px;
-            display: flex;
-        }
+.services {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 50px;
+    display: flex;
+}
 
-        .service-card {
-            
-            background-color: white;
-            border-radius: 8px;
-            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
-            margin: 10px;
-            max-width: 350px;
-            overflow: hidden;
-            text-align: center;
-        }
-        .service-card1{
-            background-color: #ffffff;
-            border-radius: 8px;
-            max-width: 600px;
-            overflow: hidden;
-            text-align: center;
-        }
+.service-card {
 
-        .service-card img {
-            width: 90%;
-            height: auto;
-            border-radius: 5px;
-            color: white;
-            cursor: pointer;
-            font-size: 14px;
-            padding: 10px 20px;
-            position: relative;
-        }
+    background-color: #FF5719;
+    border-radius: 8px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    max-width: 350px;
+    overflow: hidden;
+    text-align: center;
 
-        .service-card img:hover {
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* เงาเข้มขึ้นเมื่อชี้เมาส์ */
-            transform: scale(1.05); /* ขยายรูปเล็กน้อย */
-        }
+}
 
-        .service-card h3 {
-            color: #ff5e00;
-            margin: 5px 0;
-        }
+.service-card1 {
+    text-align: center;
+    background-color: #FF5719;
+    border-radius: 0 0 8px 8px;
+    max-width: 600px;
+    overflow: hidden;
+    text-align: center;
+    z-index: 5 !important;
+    display: block;
+    position: relative;
+    margin-bottom: 1.5rem;
+    height: 15rem;
+}
 
-        .service-card p {
-            padding: 0 15px;
-            font-size: 17px;
-            line-height: 1.5;
-        }
 
-        .service-card button {
-            background-color: #00bcd4;
-            border: none;
-            border-radius: 3px;
-            color: white;
-            cursor: pointer;
-            font-size: 14px;
-            margin: 5px 0;
-            padding: 10px 20px;
-        }
+.service-card img {
+    width: 100%;
+    height: auto;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+    /* padding: 10px 20px; */
+    position: relative;
+    transition: 2s all;
+}
 
-        .service-card button:hover {
-            background-color: #008c9e;
-        }
+.service-card1 h3 {
+    color: rgb(255, 255, 255) !important;
+}
 
-******************************************************************************* 
+.service-card1 p {
+    color: rgb(255, 255, 255) !important;
+}
 
-body4 {
+.service-card img:hover {
+
+    filter: brightness(0.4);
+    /* box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); เงาเข้มขึ้นเมื่อชี้เมาส์ */
+    transform: scale(1.25);
+    /* ขยายรูปเล็กน้อย */
+
+}
+
+.service-card h3 {
+    color: #ff5e00;
+    margin: 5px 0;
+}
+
+.service-card p {
+    padding: 0 15px;
+    font-size: 17px;
+    line-height: 1.5;
+}
+
+.service-card button {
+    background-color: #00bcd4;
+    border: none;
+    border-radius: 3px;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+    margin: 0 0 2rem;
+    padding: 10px 20px;
+}
+
+.service-card button:hover {
+    background-color: #008c9e;
+}
+
+******************************************************************************* body4 {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
@@ -569,8 +600,8 @@ body4 {
 }
 
 .pr-image {
-    flex: 1 1 calc(50% - 10px); 
-    min-width: 300px;           
+    flex: 1 1 calc(50% - 10px);
+    min-width: 300px;
     padding: 20px;
     text-align: center;
 }
@@ -581,8 +612,8 @@ body4 {
 }
 
 .pr-content {
-    flex: 1 1 calc(50% - 10px); 
-    min-width: 300px;           
+    flex: 1 1 calc(50% - 10px);
+    min-width: 300px;
     padding: 20px;
     text-align: center;
 }
@@ -636,52 +667,55 @@ body4 {
 .pr-content button:hover {
     background-color: #008c9e;
 }
- 
-*******************************************************************************PARTNERS
 
-.PARTNERS-image {
-    width: 100%; 
+*******************************************************************************PARTNERS .PARTNERS-image {
+    width: 100%;
     height: auto;
     justify-content: center;
 }
 
 .PARTNERS-image img {
-    width: 100%; 
+    width: 100%;
     height: auto;
     justify-content: center;
 }
 
 .image-row {
     display: flex;
-    gap: 16px; /* ระยะห่างระหว่างคอลัมน์ */
+    gap: 16px;
+    /* ระยะห่างระหว่างคอลัมน์ */
     justify-content: center;
-  }
-  
-  .image-column {
-    flex: 1; /* แบ่งพื้นที่เท่าๆ กันในแต่ละคอลัมน์ */
-    max-width: 300px; /* ขนาดสูงสุดของแต่ละคอลัมน์ */
-  }
-  
-  .image-column img {
+}
+
+.image-column {
+    flex: 1;
+    /* แบ่งพื้นที่เท่าๆ กันในแต่ละคอลัมน์ */
+    max-width: 300px;
+    /* ขนาดสูงสุดของแต่ละคอลัมน์ */
+}
+
+.image-column img {
     width: 100%;
     height: auto;
-    border-radius: 8px; /* มุมโค้งมน */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* เงาปกติ */
-    
-  }
-  
-  .image-column img:hover {
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* เงาเข้มขึ้นเมื่อชี้เมาส์ */
-    transform: scale(1.05); /* ขยายรูปเล็กน้อย */
-  }
+    border-radius: 8px;
+    /* มุมโค้งมน */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* เงาปกติ */
+
+}
+
+.image-column img:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    /* เงาเข้มขึ้นเมื่อชี้เมาส์ */
+    transform: scale(1.05);
+    /* ขยายรูปเล็กน้อย */
+}
 
 
 
 
 
-******************************************************************************* ท้าย
-
-.container2 {
+******************************************************************************* ท้าย .container2 {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
