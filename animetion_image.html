@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Image Zoom on Scroll</title>
+<style>
+  .image-container {
+    width: 300px; /* ปรับขนาดภาพตามต้องการ */
+    height: 200px; /* ปรับขนาดภาพตามต้องการ */
+    overflow: hidden; /* ป้องกันภาพล้นออกมา */
+  }
+
+  .image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* ปรับการแสดงผลภาพให้พอดีกับ container */
+    transform: scale(1); /* ขนาดเริ่มต้นของภาพ */
+    transition: transform 0.5s ease; /* เพิ่ม animation เมื่อภาพขยาย */
+  }
+
+  .image-container.active img {
+    transform: scale(1.2); /* ขนาดเมื่อภาพถูกขยาย */
+  }
+</style>
+</head>
+<body style="height: 1000px;">
+
+<div class="image-container">
+  <img src="/images/1.png" alt="Your Image">
+  
+  
+  
+  
+</div>
+<div class="image-container">
+  <img src="/images/1.png" alt="Your Image">
+  
+  
+  
+  
+</div>
+
+<script>
+  const imageContainer = document.querySelector('.image-container');
+  let imageShown = false;
+
+  window.addEventListener('scroll', () => {
+    const imageTop = imageContainer.getBoundingClientRect().top;
+    const windowHeight = window.innerHeight;
+
+    if (imageTop < windowHeight * 0.75 && !imageShown) { // ตรวจสอบว่าภาพอยู่ใกล้กับกลางจอ
+      imageContainer.classList.add('active');
+      imageShown = true;
+    }
+  });
+
+  // ขยายภาพเมื่อโหลดหน้าเว็บครั้งแรก (ถ้าต้องการ)
+  window.addEventListener('load', () => {
+    imageContainer.classList.add('active');
+    imageShown = true;
+  });
+</script>
+
+</body>
+</html>
