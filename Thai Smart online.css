@@ -249,7 +249,8 @@ a {
     display: flex;
 }
 
-******************************************************************************* .container {
+******************************************************************************* 
+.container {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: auto;
@@ -497,10 +498,10 @@ a {
 .service-card {
 
     background-color: #FF5719;
-    border-radius: 8px;
+    border-radius: 20px;
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
     margin: 10px;
-    max-width: 26vw;
+    max-width: 400px;
     overflow: hidden;
     text-align: center;
     height:fit-content;
@@ -517,6 +518,7 @@ a {
     display: block;
     position: relative;
     margin-bottom: 1.5rem;
+    padding: 0 30px;
     /* height: 15rem; */
     /* padding: 20px 30px; */
 }
@@ -789,7 +791,12 @@ body {
     font-size: 14px;
     padding: 10px 20px;
 }
-******************************************************************************* ท้าย 
+******************************************************************************* ท้าย
+.footer {
+    background-color: #000;
+    color: white;
+    padding: 20px 0;
+}
 .container2 {
     display: flex;
     justify-content: center;
@@ -828,9 +835,6 @@ body {
     line-height: 1.2;
 }
 
-.footer-section ul li a:hover {
-    text-decoration: underline;
-}
 
 .footer-section img {
     width: 200px;
@@ -854,14 +858,19 @@ body {
     margin: 0;
 }
 
+.links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
 .links a {
-    color: #ff6600;
+    color: #ffffff;
     text-decoration: none;
 }
 
-.links a:hover {
-    text-decoration: underline;
-}
 
 .footer {
     background-color: #000;
@@ -869,28 +878,13 @@ body {
     padding: 20px 0;
 }
 
-.container2 {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    max-width: 1200px;
-    margin: auto;
-}
 
-.footer-section h3 {
-    color: #ff6600;
-    margin-bottom: 10px;
-}
 
-.footer-section ul li a {
-    color: white;
-    text-decoration: none;
-}
 
-.footer-bottom {
-    text-align: center;
-    margin-top: 20px;
-}
+
+
+
+
 
 /* .edit-fluid {
     justify-content: right !important;
