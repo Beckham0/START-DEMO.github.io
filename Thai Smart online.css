@@ -807,6 +807,8 @@ body4 {
 .footer-section h3 {
     color: #ff6600;
     margin-bottom: 10px;
+    font-size: 25px;
+    line-height: 1.2;
 }
 
 .footer-section ul {
@@ -821,10 +823,20 @@ body4 {
 .footer-section ul li a {
     color: #fff;
     text-decoration: none;
+    font-size: 17px;
+    line-height: 1.2;
 }
 
 .footer-section ul li a:hover {
     text-decoration: underline;
+}
+
+.footer-section img {
+    width: 200px;
+    height: auto;
+    color: white;
+    transition: 2s all;
+    position: relative;
 }
 
 .qr-code {
