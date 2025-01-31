@@ -249,7 +249,8 @@ a {
     display: flex;
 }
 
-******************************************************************************* .container {
+******************************************************************************* 
+.container {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: auto;
@@ -790,7 +791,12 @@ body {
     font-size: 14px;
     padding: 10px 20px;
 }
-******************************************************************************* ท้าย 
+******************************************************************************* ท้าย
+.footer {
+    background-color: #000;
+    color: white;
+    padding: 20px 0;
+}
 .container2 {
     display: flex;
     justify-content: center;
@@ -829,9 +835,6 @@ body {
     line-height: 1.2;
 }
 
-.footer-section ul li a:hover {
-    text-decoration: underline;
-}
 
 .footer-section img {
     width: 200px;
@@ -855,14 +858,19 @@ body {
     margin: 0;
 }
 
+.links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
 .links a {
-    color: #ff6600;
+    color: #ffffff;
     text-decoration: none;
 }
 
-.links a:hover {
-    text-decoration: underline;
-}
 
 .footer {
     background-color: #000;
@@ -870,28 +878,13 @@ body {
     padding: 20px 0;
 }
 
-.container2 {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    max-width: 1200px;
-    margin: auto;
-}
 
-.footer-section h3 {
-    color: #ff6600;
-    margin-bottom: 10px;
-}
 
-.footer-section ul li a {
-    color: white;
-    text-decoration: none;
-}
 
-.footer-bottom {
-    text-align: center;
-    margin-top: 20px;
-}
+
+
+
+
 
 /* .edit-fluid {
     justify-content: right !important;
