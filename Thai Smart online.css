@@ -545,9 +545,9 @@ a {
 
 .service-card img:hover {
 
-    filter: brightness(0.4);
+    filter: brightness(0.7);
     /* box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); เงาเข้มขึ้นเมื่อชี้เมาส์ */
-    transform: scale(1.25);
+    transform: scale(1.09);
     /* ขยายรูปเล็กน้อย */
 
 }
@@ -710,14 +710,16 @@ body {
     height: auto;
     border-radius: 8px;
     /* มุมโค้งมน */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(255, 209, 209, 0.1);
     /* เงาปกติ */
+    position: relative;
+    transition: 2s all;
 
 }
 
-.image-column img:hover {
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    /* เงาเข้มขึ้นเมื่อชี้เมาส์ */
+.image-column img:hover { 
+    filter: brightness(0.7);
+    /* box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); เงาเข้มขึ้นเมื่อชี้เมาส์ */
     transform: scale(1.05);
     /* ขยายรูปเล็กน้อย */
 }
@@ -727,14 +729,14 @@ body {
 .News {
     flex-wrap: wrap;
     justify-content: center;
-    padding: 50px;
+    padding: 70px;
     display: flex;
     padding: 0 30px;
 }
 
 .news-c {
     background-color: #ffffff;
-    border-radius: 2px;
+    border-radius: 10px;
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.5);
     margin: 10px;
     max-width: 400px;
@@ -766,6 +768,11 @@ body {
     color: white;
     transition: 2s all;
     position: relative;
+}
+
+.news-c img:hover { 
+    filter: brightness(0.7);
+    /* box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); เงาเข้มขึ้นเมื่อชี้เมาส์ */
 }
 
 .news-c a {
@@ -851,7 +858,7 @@ body {
 
 .footer-bottom {
     text-align: center;
-    margin-top: 20px;
+
 }
 
 .footer-bottom p {
@@ -859,16 +866,27 @@ body {
 }
 
 .links {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    max-width: 1200px;
-    margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 20px;
+        gap: 20px;
+        max-width: 1800px;
+        border-radius: 9px;
 }
 
 .links a {
     color: #ffffff;
     text-decoration: none;
+}
+
+.links h3 {
+    flex: 1 1 1 calc(25% - 10px);
+    text-align: center;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 1.2;
 }
 
 
