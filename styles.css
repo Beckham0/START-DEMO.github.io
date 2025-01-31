@@ -12,12 +12,14 @@ body{
     min-height: 100vh;
 
 } */
-
+.slider-wrapper{
+  height: inherit;
+}
 .card-list .card-item {
     color: #fff;
     width: 400px;
     /* padding: 35px; */
-    display: flex;
+    /* display: flex; */
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -58,18 +60,21 @@ body{
 
   .elementor-tab-title {
     padding: 20px 25px;
-    background-color: #fd7921;
+    color: black;
     border-radius: 30px;
     line-height: 1;
     
   }
 
   .elementor-tab-title.active {
-  
+    padding: 20px 25px;
+    background-color: #fd7921;
+    border-radius: 30px;
+    line-height: 1;
   }
 
   .elementor-tabs-content-wrapper {
-  
+    padding: 20px;
   }
 
   .elementor-tab-content {
@@ -78,12 +83,25 @@ body{
 
   .elementor-tab-content.active {
     display: inline-block; /* แสดงเนื้อหาที่เปิด */
+    margin: 10px;
+  }
+  .elementor-tab-content.active h4 {
+   color: #fd7921;
+   font-weight: 600;
+  }
+  .elementor-tab-content.active p {
+  font-size: 1rem;
   }
 
   .image {
     width: 20rem;
+    margin-block-end: 20px;
   }
   .elementor-tab-title span{
     font-weight: 600;
-    color: #fff;
+    color: #000000;
+  }
+  .elementor-tab-title.active span{
+    font-weight: 600;
+    color: #ffffff;
   }
