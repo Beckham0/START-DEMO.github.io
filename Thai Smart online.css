@@ -1,9 +1,9 @@
-body {
-    margin: 0;
-    font-family: "K2D", serif !important;
-    font-weight: 400;
-    font-style: normal;
+*{
+    font-family: "Kanit", serif !important;
+  font-weight: 400;
+  font-style: normal;
 }
+
 
 header {
     background-color: #fe7009 !important;
@@ -272,6 +272,7 @@ a {
     margin: 0;
     width: calc(100%);
     font-size: 1.9rem;
+    margin-bottom: 20px;
 }
 
 .item1 p {
@@ -499,10 +500,10 @@ a {
     border-radius: 8px;
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
     margin: 10px;
-    max-width: 400px;
+    max-width: 26vw;
     overflow: hidden;
     text-align: center;
-
+    height:fit-content;
 }
 
 .service-card1 {
@@ -516,13 +517,8 @@ a {
     display: block;
     position: relative;
     margin-bottom: 1.5rem;
-    height: 15rem;
-<<<<<<< HEAD
-    padding: 20px 30px;
-=======
-    padding: 0 30px;
-    margin-top: 20px;
->>>>>>> 165cb7bec2bff30f9b0c486a8114ea8800ad8017
+    /* height: 15rem; */
+    /* padding: 20px 30px; */
 }
 
 
@@ -581,7 +577,7 @@ a {
 }
 
 ******************************************************************************* 
-body4 {
+body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;

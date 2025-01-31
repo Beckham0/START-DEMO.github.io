@@ -46,3 +46,44 @@ body{
     color: #fff !important;
 }
 
+/* style Our cosmuter */
+.elementor-tabs {
+    
+  }
+
+  .elementor-tabs-wrapper {
+    display: flex;
+    justify-content: center;
+  }
+
+  .elementor-tab-title {
+    padding: 20px 25px;
+    background-color: #fd7921;
+    border-radius: 30px;
+    line-height: 1;
+    
+  }
+
+  .elementor-tab-title.active {
+  
+  }
+
+  .elementor-tabs-content-wrapper {
+  
+  }
+
+  .elementor-tab-content {
+    display: none; /* ซ่อนเนื้อหาเริ่มต้น */
+  }
+
+  .elementor-tab-content.active {
+    display: inline-block; /* แสดงเนื้อหาที่เปิด */
+  }
+
+  .image {
+    width: 20rem;
+  }
+  .elementor-tab-title span{
+    font-weight: 600;
+    color: #fff;
+  }
