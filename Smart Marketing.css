@@ -141,99 +141,90 @@ body {
 }
 
 
+.Smart-Marketing  {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+  background-image: url('images/Smart-Marketing.jpg');
+  background-size: cover; /* ปรับภาพให้พอดีกับพื้นที่ */
+  background-position: center; /* จัดตำแหน่งภาพ */
+  background-repeat: no-repeat; /* ไม่ให้ภาพซ้ำ */
+}
 
-******************************************************************************* ท้าย
+.image-container h1 {
+  background-color: #fd7921;
+  justify-content: center; 
+  object-fit: cover; /* ป้องกันการยืด/บีบภาพ */
+  border-radius: 10px;
 
-    .footer {
-      background-color: #000;
-      padding: 20px 0;
-    }
-    
-    .container2 {
-      display: flex;
-      justify-content: space-around;
-      flex-wrap: wrap;
-      max-width: 1200px;
-      margin: 0 auto;
-    }
-    
-    .footer-section {
-      flex: 1;
-      margin: 10px;
-      text-align: center;
-    }
-    
-    .footer-section h3 {
-      color: #ff6600;
-      margin-bottom: 10px;
-    }
-    
-    .footer-section ul {
-      list-style: none;
-      padding: 0;
-    }
-    
-    .footer-section ul li {
-      margin: 5px 0;
-    }
-    
-    .footer-section ul li a {
-      color: #fff;
-      text-decoration: none;
-    }
-    
-    .footer-section ul li a:hover {
-      text-decoration: underline;
-    }
-    
-    .qr-code {
-      width: 100px;
-      margin-top: 10px;
-    }
-    
-    .footer-bottom {
-      text-align: center;
-      margin-top: 20px;
-    }
-    
-    .footer-bottom p {
-      margin: 0;
-    }
-    
-    .links a {
-      color: #ff6600;
-      text-decoration: none;
-    }
-    
-    .links a:hover {
-      text-decoration: underline;
-    }
-    
-    .footer {
-      background-color: #000;
-      color: white;
-      padding: 20px 0;
+}
+
+.image-container h1 p{
+  font-size: 32px;
+  line-height: 1.2;
+
+}
+
+
+
+
+
+
+.ner {
+    flex: 1 1 calc(50% - 10px);
+    min-width: 300px;
+    padding: 20px;
+    text-align: center;
+    margin-top: 80px;
+    padding: 0 30px;
   }
+  .item {
+    display: grid;
+    grid-template-columns: 1fr;
+    column-gap: 1rem;
+    max-width: 600px;
+    margin: 0 auto;
+    margin-top: 10px;
+    height: 80px;
+    background-color: #fd7921;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* เพิ่มเงา */
+  }
+  .item .left {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* เพิ่มระยะห่าง */
+  }
+  .item .left .check {
+    width: 25px; /* ปรับขนาดวงกลม */
+    height: 25px;
+    background-color: #ffffff; /* สีแดง */
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .item .left .check span {
+    color: #f44336;
+    font-size: 16px; /* ปรับขนาดเครื่องหมายถูก */
+  }
+  .item .right {
+    width: 25px; /* ปรับขนาดวงกลม */
+    height: 25px;
+    border-radius: 50%;
+    background-color: #fd7921; /* สีเทาเข้ม */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .item .right span {
+    color: white;
+    font-size: 30px; /* ปรับขนาดเครื่องหมายบวก */
+  }
+
   
-  .container2 {
-      display: flex;
-      justify-content: space-around;
-      flex-wrap: wrap;
-      max-width: 1200px;
-      margin: auto;
-  }
-  
-  .footer-section h3 {
-      color: #ff6600;
-      margin-bottom: 10px;
-  }
-  
-  .footer-section ul li a {
-      color: white;
-      text-decoration: none;
-  }
-  
-  .footer-bottom {
-      text-align: center;
-      margin-top: 20px;
-  }

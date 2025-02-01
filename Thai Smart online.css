@@ -150,7 +150,6 @@ a {
 .menu {
     display: flex;
     gap: 30px;
-    width: 50.145%;
 }
 
 .menu.active {
@@ -413,14 +412,17 @@ a {
 .buttons6 {
     flex: 1 1 calc(50% - 10px);
     min-width: 300px;
-    padding: 20px;
+    width: 100%;
     text-align: center;
+    height: auto;
 }
 
 .buttons6 img {
-    width: 100%;
-    height: auto;
+    width: 500px;
     justify-content: center;
+    height: 500px;    
+  object-fit: cover; /* ปรับภาพให้เต็มพื้นที่ โดยไม่เสียสัดส่วน */
+
 }
 
 .buttons7 {
@@ -436,6 +438,8 @@ a {
     column-gap: 1rem;
     max-width: 600px;
     margin: 0 auto;
+    padding: 0 30px;
+    margin-top: 40px;
 
 }
 
@@ -468,6 +472,7 @@ a {
     padding: 0.1px 0.1px;
     max-width: 270px;
     margin: 0 auto;
+    height: auto;
 }
 
 .buttons8 a {
@@ -545,9 +550,9 @@ a {
 
 .service-card img:hover {
 
-    filter: brightness(0.4);
+    filter: brightness(0.7);
     /* box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); เงาเข้มขึ้นเมื่อชี้เมาส์ */
-    transform: scale(1.25);
+    transform: scale(1.09);
     /* ขยายรูปเล็กน้อย */
 
 }
@@ -710,14 +715,16 @@ body {
     height: auto;
     border-radius: 8px;
     /* มุมโค้งมน */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(255, 209, 209, 0.1);
     /* เงาปกติ */
+    position: relative;
+    transition: 2s all;
 
 }
 
-.image-column img:hover {
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    /* เงาเข้มขึ้นเมื่อชี้เมาส์ */
+.image-column img:hover { 
+    filter: brightness(0.7);
+    /* box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); เงาเข้มขึ้นเมื่อชี้เมาส์ */
     transform: scale(1.05);
     /* ขยายรูปเล็กน้อย */
 }
@@ -727,14 +734,14 @@ body {
 .News {
     flex-wrap: wrap;
     justify-content: center;
-    padding: 50px;
+    padding: 70px;
     display: flex;
     padding: 0 30px;
 }
 
 .news-c {
     background-color: #ffffff;
-    border-radius: 2px;
+    border-radius: 10px;
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.5);
     margin: 10px;
     max-width: 400px;
@@ -768,6 +775,11 @@ body {
     position: relative;
 }
 
+.news-c img:hover { 
+    filter: brightness(0.7);
+    /* box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); เงาเข้มขึ้นเมื่อชี้เมาส์ */
+}
+
 .news-c a {
     text-decoration: none;
     font-weight: bold;
@@ -791,23 +803,138 @@ body {
     font-size: 14px;
     padding: 10px 20px;
 }
+
+*******************************************************************************
+
+.body9 {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f25c23;
+}
+
+    .form {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap; /* เพื่อให้ส่วนต่าง ๆ อยู่ในพื้นที่ขนาดเล็ก */
+        max-width:100%; /* กำหนดขนาดสูงสุดของ container */
+        margin: auto;
+        height: 0 150px;
+    }
+
+    .form-container {
+        flex: 1 1 calc(50% - 10px);
+        min-width: 500px; /* กำหนดขนาดขั้นต่ำของฟอร์ม */
+        padding: 30px;
+        width: 50%;
+        background-color: #f25c23;
+    }
+
+    .form-container h1 {
+        color: white;
+        text-align: center;
+        margin-bottom: 40px;
+        font-size: 40px;
+        line-height: 1.2;
+    }
+
+    .form-container label {
+        display: block;
+        color: white;
+        margin-bottom: 5px;
+        font-size: 25px;
+        line-height: 1.2;
+    }
+
+    .form-container input,
+    .form-container textarea,
+    .form-container select,
+    .form-container button {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: none;
+        border-radius: 5px;
+        font-size: 25px;
+        line-height: 1.2;
+    }
+
+    .form-container input {
+        background-color: white;
+    }
+
+    .form-container textarea {
+        background-color: white;
+        
+    }
+
+    .form-container select {
+        background-color: white;
+    }
+
+    .form-container button {
+        background-color: #1fc3d8;
+        color: white;
+        font-size: 25px;
+        cursor: pointer;
+    }
+
+    .form-container button:hover {
+        background-color: #17a1b3;
+    }
+
+    .image-container {
+        flex: 1 1 calc(50% - 10px);
+        min-width: 500px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+    }
+
+    .image-container img {
+        width: 1100px;
+        justify-content: center; 
+        object-fit: cover; /* ป้องกันการยืด/บีบภาพ */
+        border-radius: 10px;
+        height: 900px;
+    }
+
 ******************************************************************************* ท้าย
+.footer-c {
+    padding: 0; /* ไม่มีระยะห่างรอบนอก */
+    margin: 0; /* ไม่มีระยะขอบ */
+    width: 100%; /* ใช้ความกว้างเต็มหน้าจอ */
+} 
+
 .footer {
     background-color: #000;
     color: white;
-    padding: 20px 0;
+    align-items: center;
+    padding: 10px 20px;
+    position: relative;
+      background-image: url('');
+  background-size: cover; /* ปรับภาพให้พอดีกับพื้นที่ */
+  background-position: center; /* จัดตำแหน่งภาพ */
+  background-repeat: no-repeat; /* ไม่ให้ภาพซ้ำ */
+
 }
 .container2 {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    max-width: 1200px;
+    max-width: 1600px;
     margin: 0 auto;
 }
 
 .footer-section {
     flex: 1 1 calc(25% - 10px);
-    min-width: 300px;
+    min-width: 400px;
     padding: 15px;
     text-align: start;
 }
@@ -815,9 +942,17 @@ body {
 .footer-section h3 {
     color: #ff6600;
     margin-bottom: 10px;
-    font-size: 25px;
+    font-size: 32px;
     line-height: 1.2;
 }
+
+.footer-section h4 {
+    color: #ff6600;
+    margin-bottom: 15px;
+    font-size: 20px;
+    line-height: 1.2;
+}
+
 
 .footer-section ul {
     list-style: none;
@@ -851,7 +986,7 @@ body {
 
 .footer-bottom {
     text-align: center;
-    margin-top: 20px;
+
 }
 
 .footer-bottom p {
@@ -859,17 +994,41 @@ body {
 }
 
 .links {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    max-width: 1200px;
-    margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 20px;
+        gap: 20px;
+        max-width: 1800px;
+        border-radius: 9px;
 }
 
 .links a {
     color: #ffffff;
     text-decoration: none;
 }
+
+.links h3 {
+    flex: 1 1 1 calc(25% - 10px);
+    text-align: center;
+    justify-content: center;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 1.2;
+}
+
+.links h4 {
+    flex: 1 1 1 calc(25% - 10px);
+    text-align: center;
+    justify-content: center;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 25px;
+    line-height: 1.2;
+}
+
+
 
 
 .footer {
