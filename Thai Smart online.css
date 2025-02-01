@@ -825,7 +825,7 @@ body {
         flex: 1 1 calc(50% - 100px);
         min-width: 500px; /* กำหนดขนาดขั้นต่ำของฟอร์ม */
         padding: 30px;
-        width: 600px;
+        width: 50%;
         background-color: #f25c23;
 
     }
