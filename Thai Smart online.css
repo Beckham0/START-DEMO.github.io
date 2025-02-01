@@ -140,7 +140,6 @@ a {
     font-size: 3rem;
     color: antiquewhite;
     text-decoration: none;
-    
 }
 
 .logo img {
@@ -151,7 +150,6 @@ a {
 .menu {
     display: flex;
     gap: 30px;
-    width: 50.145%;
 }
 
 .menu.active {
