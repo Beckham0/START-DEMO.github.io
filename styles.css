@@ -145,3 +145,14 @@ body{
   transition: 0.5s;
   background-color: rgba(255, 0, 0, 0);
 }
+
+.chaty-channel-list{
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  z-index: 10001;
+}
+.chaty-channel-list svg{
+width: 54px;
+height: 54px;
+}

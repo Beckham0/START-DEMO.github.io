@@ -241,6 +241,10 @@ a {
     .menu-toggle {
         display: flex;
     }
+
+    .image-container {
+             min-width: 100%;
+      }
 }
 
 /* Show menu when active */
@@ -418,7 +422,7 @@ a {
 }
 
 .buttons6 img {
-    width: 500px;
+    width: 100%;
     justify-content: center;
     height: 500px;    
   object-fit: cover; /* ปรับภาพให้เต็มพื้นที่ โดยไม่เสียสัดส่วน */
@@ -828,10 +832,11 @@ body {
 
     .form-container {
         flex: 1 1 calc(50% - 10px);
-        min-width: 500px; /* กำหนดขนาดขั้นต่ำของฟอร์ม */
+        /* min-width: 500px; กำหนดขนาดขั้นต่ำของฟอร์ม */
         padding: 30px;
         width: 50%;
-        background-color: #f25c23;
+        background-color: transparent;
+        background-image: linear-gradient(180deg, #FF5719 0%, #F38860 100%);
     }
 
     .form-container h1 {
@@ -902,7 +907,7 @@ body {
         justify-content: center; 
         object-fit: cover; /* ป้องกันการยืด/บีบภาพ */
         border-radius: 10px;
-        height: 900px;
+       overflow: hidden;
     }
 
 ******************************************************************************* ท้าย
