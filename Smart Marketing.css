@@ -166,3 +166,64 @@ body {
   line-height: 1.2;
 
 }
+
+
+
+
+
+
+.ner {
+    flex: 1 1 calc(50% - 10px);
+    min-width: 300px;
+    padding: 20px;
+    text-align: center;
+    margin-top: 80px;
+  }
+  .item {
+    display: grid;
+    grid-template-columns: 1fr;
+    column-gap: 1rem;
+    max-width: 600px;
+    margin: 0 auto;
+    margin-top: 10px;
+    height: 80px;
+    background-color: #fd7921;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* เพิ่มเงา */
+  }
+  .item .left {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* เพิ่มระยะห่าง */
+  }
+  .item .left .check {
+    width: 25px; /* ปรับขนาดวงกลม */
+    height: 25px;
+    background-color: #ffffff; /* สีแดง */
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .item .left .check span {
+    color: #f44336;
+    font-size: 16px; /* ปรับขนาดเครื่องหมายถูก */
+  }
+  .item .right {
+    width: 25px; /* ปรับขนาดวงกลม */
+    height: 25px;
+    border-radius: 50%;
+    background-color: #fd7921; /* สีเทาเข้ม */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .item .right span {
+    color: white;
+    font-size: 30px; /* ปรับขนาดเครื่องหมายบวก */
+  }
+
+  
