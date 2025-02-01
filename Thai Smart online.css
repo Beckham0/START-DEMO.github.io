@@ -818,26 +818,32 @@ body {
         flex-wrap: wrap; /* เพื่อให้ส่วนต่าง ๆ อยู่ในพื้นที่ขนาดเล็ก */
         max-width:100%; /* กำหนดขนาดสูงสุดของ container */
         margin: auto;
+        height: 0 150px;
     }
 
     .form-container {
-        flex: 1; /* ใช้พื้นที่อย่างสมดุล */
-        min-width: 350px; /* กำหนดขนาดขั้นต่ำของฟอร์ม */
-        padding: 20px;
+        flex: 1 1 calc(50% - 100px);
+        min-width: 500px; /* กำหนดขนาดขั้นต่ำของฟอร์ม */
+        padding: 30px;
         width: 700px;
         background-color: #f25c23;
+
     }
 
     .form-container h1 {
         color: white;
         text-align: center;
-        margin-bottom: 20px;
+        margin-bottom: 40px;
+        font-size: 40px;
+        line-height: 1.2;
     }
 
     .form-container label {
         display: block;
         color: white;
         margin-bottom: 5px;
+        font-size: 25px;
+        line-height: 1.2;
     }
 
     .form-container input,
@@ -849,6 +855,8 @@ body {
         margin-bottom: 15px;
         border: none;
         border-radius: 5px;
+        font-size: 25px;
+        line-height: 1.2;
     }
 
     .form-container input,
@@ -863,7 +871,7 @@ body {
     .form-container button {
         background-color: #1fc3d8;
         color: white;
-        font-size: 16px;
+        font-size: 25px;
         cursor: pointer;
     }
 
@@ -872,12 +880,16 @@ body {
     }
 
     .image-container {
-        flex: 1; /* ใช้พื้นที่อย่างสมดุล */
         display: flex;
         justify-content: center;
         align-items: center;
-        padding: 10px;
+        padding: 0px;
         background-color: white;
+
+        flex: 1 1 calc(50% - 100px);
+        min-width: 500px;
+        padding: 20px;
+        text-align: center;
     }
 
     .image-container img {
