@@ -413,14 +413,17 @@ a {
 .buttons6 {
     flex: 1 1 calc(50% - 10px);
     min-width: 300px;
-    padding: 20px;
+    width: 100%;
     text-align: center;
+    height: auto;
 }
 
 .buttons6 img {
-    width: 100%;
-    height: auto;
+    width: 500px;
     justify-content: center;
+    height: 500px;    
+  object-fit: cover; /* ปรับภาพให้เต็มพื้นที่ โดยไม่เสียสัดส่วน */
+
 }
 
 .buttons7 {
@@ -436,6 +439,8 @@ a {
     column-gap: 1rem;
     max-width: 600px;
     margin: 0 auto;
+    padding: 0 30px;
+    margin-top: 40px;
 
 }
 
@@ -468,6 +473,7 @@ a {
     padding: 0.1px 0.1px;
     max-width: 270px;
     margin: 0 auto;
+    height: auto;
 }
 
 .buttons8 a {
@@ -822,12 +828,11 @@ body {
     }
 
     .form-container {
-        flex: 1 1 calc(50% - 100px);
+        flex: 1 1 calc(50% - 10px);
         min-width: 500px; /* กำหนดขนาดขั้นต่ำของฟอร์ม */
         padding: 30px;
         width: 50%;
         background-color: #f25c23;
-
     }
 
     .form-container h1 {
@@ -859,9 +864,13 @@ body {
         line-height: 1.2;
     }
 
-    .form-container input,
+    .form-container input {
+        background-color: white;
+    }
+
     .form-container textarea {
         background-color: white;
+        
     }
 
     .form-container select {
@@ -880,26 +889,22 @@ body {
     }
 
     .image-container {
+        flex: 1 1 calc(50% - 10px);
+        min-width: 500px;
+        width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
-        padding: 0px;
-        background-color: white;
-
-        flex: 1 1 calc(50% - 100px);
-        min-width: 500px;
-        padding: 20px;
-        text-align: center;
+        height: auto;
     }
 
     .image-container img {
-
-        max-width: 100%; /* ให้ภาพปรับขนาดตาม container */
-        height: auto;
+        width: 1100px;
+        justify-content: center; 
         object-fit: cover; /* ป้องกันการยืด/บีบภาพ */
         border-radius: 10px;
+        height: 900px;
     }
-
 
 ******************************************************************************* ท้าย
 .footer-c {
