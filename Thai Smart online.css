@@ -919,6 +919,11 @@ body {
     align-items: center;
     padding: 10px 20px;
     position: relative;
+      background-image: url('');
+  background-size: cover; /* ปรับภาพให้พอดีกับพื้นที่ */
+  background-position: center; /* จัดตำแหน่งภาพ */
+  background-repeat: no-repeat; /* ไม่ให้ภาพซ้ำ */
+
 }
 .container2 {
     display: flex;
