@@ -12,96 +12,136 @@ body{
     min-height: 100vh;
 
 } */
-.slider-wrapper{
+.slider-wrapper {
   height: inherit;
 }
+
 .card-list .card-item {
-    color: #fff;
-    width: 400px;
-    /* padding: 35px; */
-    /* display: flex; */
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    border-radius: 8px;
-    background: #949494;
-    border: 1px solid rgba(rgb(255, 255, 255), green, blue, alpha);
+  background: #949494;
+  background-size: cover;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  min-width: 100%;
+  min-height: 100%;
+  justify-content: center;
+  display: flex;
+
 }
 
-.card-list .card-item .user-image {
-    background-size: cover;
-    background-position: 50%;
-    background-repeat: no-repeat;
-    min-width: 100%;
-    min-height: 100%;
-}
+/* .card-list .card-item .user-image {
+  background-size: cover;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  min-width: 100%;
+  min-height: 100%;
+  justify-content: center;
+  display: flex;
 
-.card-list .card-item .user-profession{
-    font-size: 1.25rem;
-    color: #fff;
-    font-weight: 500;
-    margin: 14px 0 40px;
+} */
+
+.card-list .card-item .user-profession {
+  font-size: 1.25rem;
+  color: #fff;
+  font-weight: 500;
+  margin: 14px 0 40px;
 }
 
 
 .cr-w {
-    color: #fff !important;
+  color: #fff !important;
 }
 
 /* style Our cosmuter */
-.elementor-tabs {
-    
-  }
+.elementor-tabs {}
 
-  .elementor-tabs-wrapper {
-    display: flex;
-    justify-content: center;
-  }
+.elementor-tabs-wrapper {
+  display: flex;
+  justify-content: center;
+}
 
-  .elementor-tab-title {
-    padding: 20px 25px;
-    color: black;
-    border-radius: 30px;
-    line-height: 1;
-    
-  }
+.elementor-tab-title {
+  padding: 20px 25px;
+  color: black;
+  border-radius: 30px;
+  line-height: 1;
+  cursor: pointer;
+}
 
-  .elementor-tab-title.active {
-    padding: 20px 25px;
-    background-color: #fd7921;
-    border-radius: 30px;
-    line-height: 1;
-  }
+.elementor-tab-title.active {
+  padding: 20px 25px;
+  background-color: #fd7921;
+  border-radius: 30px;
+  line-height: 1;
+  cursor: pointer;
+}
 
-  .elementor-tabs-content-wrapper {
-    padding: 20px;
-  }
+.elementor-tabs-content-wrapper {
+  padding: 20px;
+}
 
-  .elementor-tab-content {
-    display: none; /* ซ่อนเนื้อหาเริ่มต้น */
-  }
+.elementor-tab-content {
+  display: none;
+  /* ซ่อนเนื้อหาเริ่มต้น */
+}
 
-  .elementor-tab-content.active {
-    display: inline-block; /* แสดงเนื้อหาที่เปิด */
-    margin: 10px;
-  }
-  .elementor-tab-content.active h4 {
-   color: #fd7921;
-   font-weight: 600;
-  }
-  .elementor-tab-content.active p {
+.elementor-tab-content.active {
+  display: inline-block;
+  /* แสดงเนื้อหาที่เปิด */
+  margin: 10px;
+}
+
+.elementor-tab-content.active h4 {
+  color: #fd7921;
+  font-weight: 600;
+}
+
+.elementor-tab-content.active p {
   font-size: 1rem;
-  }
+}
 
-  .image {
-    width: 20rem;
-    margin-block-end: 20px;
-  }
-  .elementor-tab-title span{
-    font-weight: 600;
-    color: #000000;
-  }
-  .elementor-tab-title.active span{
-    font-weight: 600;
-    color: #ffffff;
-  }
+.image {
+  width: 20rem;
+  margin-block-end: 20px;
+}
+
+.elementor-tab-title span {
+  font-weight: 600;
+  color: #000000;
+}
+
+.elementor-tab-title.active span {
+  font-weight: 600;
+  color: #ffffff;
+}
+
+
+
+.swiper-slide-contents {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.swiper-slide-contents span {
+  font-size: 35px;
+  font-weight: 700;
+  line-height: 1;
+  background-color: rgba(255, 87, 25, 0.8);
+  color: #fff;
+  border-radius: 10px;
+  padding: 10px 10px;
+}
+
+.message-button{
+  background-color: aqua;
+  padding: 5px 20px 5px 20px;
+  border-radius: 5px;
+  border-width: 0px;
+  color: #fff;
+  font-weight: 600;
+  transition: 0.5s;
+}
+.message-button:hover {
+  transition: 0.5s;
+  background-color: rgba(255, 0, 0, 0);
+}
