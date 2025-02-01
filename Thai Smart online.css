@@ -798,23 +798,122 @@ body {
     font-size: 14px;
     padding: 10px 20px;
 }
+
+*******************************************************************************
+
+.body9 {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f25c23;
+}
+
+    .form {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap; /* เพื่อให้ส่วนต่าง ๆ อยู่ในพื้นที่ขนาดเล็ก */
+        max-width:100%; /* กำหนดขนาดสูงสุดของ container */
+        margin: auto;
+    }
+
+    .form-container {
+        flex: 1; /* ใช้พื้นที่อย่างสมดุล */
+        min-width: 350px; /* กำหนดขนาดขั้นต่ำของฟอร์ม */
+        padding: 20px;
+        width: 700px;
+        background-color: #f25c23;
+    }
+
+    .form-container h1 {
+        color: white;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .form-container label {
+        display: block;
+        color: white;
+        margin-bottom: 5px;
+    }
+
+    .form-container input,
+    .form-container textarea,
+    .form-container select,
+    .form-container button {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: none;
+        border-radius: 5px;
+    }
+
+    .form-container input,
+    .form-container textarea {
+        background-color: white;
+    }
+
+    .form-container select {
+        background-color: white;
+    }
+
+    .form-container button {
+        background-color: #1fc3d8;
+        color: white;
+        font-size: 16px;
+        cursor: pointer;
+    }
+
+    .form-container button:hover {
+        background-color: #17a1b3;
+    }
+
+    .image-container {
+        flex: 1; /* ใช้พื้นที่อย่างสมดุล */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        background-color: white;
+    }
+
+    .image-container img {
+
+        max-width: 100%; /* ให้ภาพปรับขนาดตาม container */
+        height: auto;
+        object-fit: cover; /* ป้องกันการยืด/บีบภาพ */
+        border-radius: 10px;
+    }
+
+
 ******************************************************************************* ท้าย
+.footer-c {
+    padding: 0; /* ไม่มีระยะห่างรอบนอก */
+    margin: 0; /* ไม่มีระยะขอบ */
+    width: 100%; /* ใช้ความกว้างเต็มหน้าจอ */
+} 
+
 .footer {
     background-color: #000;
     color: white;
-    padding: 20px 0;
+    align-items: center;
+    padding: 10px 20px;
+    position: relative;
 }
 .container2 {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    max-width: 1200px;
+    max-width: 1600px;
     margin: 0 auto;
 }
 
 .footer-section {
     flex: 1 1 calc(25% - 10px);
-    min-width: 300px;
+    min-width: 400px;
     padding: 15px;
     text-align: start;
 }
@@ -822,9 +921,17 @@ body {
 .footer-section h3 {
     color: #ff6600;
     margin-bottom: 10px;
-    font-size: 25px;
+    font-size: 32px;
     line-height: 1.2;
 }
+
+.footer-section h4 {
+    color: #ff6600;
+    margin-bottom: 15px;
+    font-size: 20px;
+    line-height: 1.2;
+}
+
 
 .footer-section ul {
     list-style: none;
@@ -883,11 +990,24 @@ body {
 .links h3 {
     flex: 1 1 1 calc(25% - 10px);
     text-align: center;
+    justify-content: center;
     color: #ffffff;
     text-decoration: none;
     font-size: 20px;
     line-height: 1.2;
 }
+
+.links h4 {
+    flex: 1 1 1 calc(25% - 10px);
+    text-align: center;
+    justify-content: center;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 25px;
+    line-height: 1.2;
+}
+
+
 
 
 .footer {
