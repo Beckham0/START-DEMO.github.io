@@ -15,3 +15,147 @@
     font-size: 60px;
     line-height: 1.2;
   }
+
+
+
+  
+.article {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 70px;
+    display: flex;
+    padding: 0 30px;
+}
+
+.article-c {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.5);
+    margin: 10px;
+    max-width: 300px;
+    overflow: hidden;
+    text-align: center;
+    height: 500px;
+
+}
+
+.article-c1 {
+    text-align: center;
+    background-color: #ffffff;
+    border-radius: 0 0 8px 8px;
+    max-width: 550px;
+    overflow: hidden;
+    text-align: center;
+    z-index: 5 !important;
+    display: block;
+    position: relative;
+    margin-bottom: 1.5rem;
+    height: 15rem;
+    padding: 0 30px;
+    margin-top: 20px;
+}
+
+
+.article-c img {
+    width: 100%;
+    height: auto;
+    color: white;
+    transition: 2s all;
+    position: relative;
+}
+
+.article-c a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #ff5e00;
+    font-size: 21px;
+    line-height: 1.2;
+}
+
+.article-c p {
+    margin: 0, 10px;
+    font-size: 5px;
+    line-height: 1.2;
+}
+
+.article-c button {
+    background-color: #00bcd4;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+    padding: 10px 20px;
+}
+
+
+
+
+
+
+
+
+.elementor-tabs-wrapper {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .elementor-tab-title {
+    padding: 20px 25px;
+    color: #ffffff;
+    border-radius: 5px;
+    line-height: 1;
+    cursor: pointer;
+    background-color: #000000;
+    margin: 5px;
+  }
+  
+  .elementor-tab-title.active {
+    padding: 20px 25px;
+    background-color: #fd7921;
+    border-radius: 5px;
+    line-height: 1;
+    cursor: pointer;
+    
+  }
+  
+  .elementor-tabs-content-wrapper {
+    padding: 20px;
+  }
+  
+  .elementor-tab-content {
+    display: none;
+    /* ซ่อนเนื้อหาเริ่มต้น */
+  }
+  
+  .elementor-tab-content.active {
+    display: inline-block;
+    /* แสดงเนื้อหาที่เปิด */
+    margin: 10px;
+  }
+  
+  .elementor-tab-content.active h4 {
+    color: #fd7921;
+    font-weight: 600;
+  }
+  
+  .elementor-tab-content.active p {
+    font-size: 1rem;
+  }
+  
+  .image {
+    width: 20rem;
+    margin-block-end: 20px;
+  }
+  
+  .elementor-tab-title span {
+    font-weight: 600;
+    color: #ffffff;
+  }
+  
+  .elementor-tab-title.active span {
+    font-weight: 600;
+    color: #ffffff;
+  }
+  
+  
