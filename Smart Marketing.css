@@ -146,11 +146,25 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 500px;
-  background-image: url('images/Smart-Marketing.jpg');
+  height: 300px;
+}
+
+.บทความ  {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 270px;
+  background-image: url('https://thaismartonline.com/wp-content/uploads/2024/05/SL_060521_43530_09-scaled.jpg');
   background-size: cover; /* ปรับภาพให้พอดีกับพื้นที่ */
   background-position: center; /* จัดตำแหน่งภาพ */
   background-repeat: no-repeat; /* ไม่ให้ภาพซ้ำ */
+}
+
+.บทความ h1 {
+  color: #ffffff;
+  font-size: 60px;
+  line-height: 1.2;
 }
 
 .image-container h1 {
@@ -226,5 +240,20 @@ body {
     color: white;
     font-size: 30px; /* ปรับขนาดเครื่องหมายบวก */
   }
+
+
+
+  .card-li .card-item {
+    background-size: cover;
+    background-position: 70%;
+    background-repeat: no-repeat;
+    min-width: 100%;
+    min-height: 100%;
+    justify-content: center;
+    display: flex;
+  
+
+  }
+
 
   
