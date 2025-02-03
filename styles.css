@@ -12,6 +12,11 @@ body{
     min-height: 100vh;
 
 } */
+
+.swiper {
+  height: 550px;
+}
+
 .slider-wrapper {
   height: inherit;
 }
@@ -149,7 +154,7 @@ body{
 .chaty-channel-list{
   position: fixed;
   bottom: 75px;
-  right: 80px;
+  right: 70px;
   z-index: 10001;
 }
 .chaty-channel-list svg{
