@@ -69,7 +69,7 @@ body{
 
 .elementor-tab-title.active {
   padding: 20px 25px;
-  background-color: #fd7921;
+  background-color: #FF710B;
   border-radius: 30px;
   line-height: 1;
   cursor: pointer;
@@ -91,7 +91,7 @@ body{
 }
 
 .elementor-tab-content.active h4 {
-  color: #fd7921;
+  color: #FF710B;
   font-weight: 600;
 }
 
@@ -126,7 +126,7 @@ body{
   font-size: 35px;
   font-weight: 700;
   line-height: 1;
-  background-color: rgba(255, 87, 25, 0.8);
+  background-color: #FF710B;
   color: #fff;
   border-radius: 10px;
   padding: 10px 10px;

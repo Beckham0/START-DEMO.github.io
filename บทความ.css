@@ -67,7 +67,7 @@
 .article-c a {
     text-decoration: none;
     font-weight: bold;
-    color: #ff5e00;
+    color: #FF710B;
     font-size: 21px;
     line-height: 1.2;
 }
@@ -112,7 +112,7 @@
   
   .elementor-tab-title.active {
     padding: 20px 25px;
-    background-color: #fd7921;
+    background-color: #FF710B;
     border-radius: 5px;
     line-height: 1;
     cursor: pointer;
@@ -135,7 +135,7 @@
   }
   
   .elementor-tab-content.active h4 {
-    color: #fd7921;
+    color: #FF710B;
     font-weight: 600;
   }
   

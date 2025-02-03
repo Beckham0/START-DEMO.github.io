@@ -7,7 +7,7 @@ body {
 }
 
 .Web-header {
-    background-color: #fd7921;
+    background-color: #FF710B;
     color: white;
     display: flex;
     justify-content: space-between;
@@ -150,7 +150,7 @@ body {
 }
 
 .image-container h1 {
-  background-color: #fd7921;
+  background-color: #FF710B;
   justify-content: center; 
   object-fit: cover; /* ป้องกันการยืด/บีบภาพ */
   border-radius: 10px;
@@ -184,12 +184,13 @@ body {
     margin: 0 auto;
     margin-top: 10px;
     height: 80px;
-    background-color: #fd7921;
+    background-color:#FF710B;
     color: white;
     display: flex;
     align-items: center;
     justify-content: space-between;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* เพิ่มเงา */
+    padding: 0 30px;
   }
   .item .left {
     display: flex;
@@ -206,14 +207,14 @@ body {
     justify-content: center;
   }
   .item .left .check span {
-    color: #f44336;
+    color: #FF710B;
     font-size: 16px; /* ปรับขนาดเครื่องหมายถูก */
   }
   .item .right {
     width: 25px; /* ปรับขนาดวงกลม */
     height: 25px;
     border-radius: 50%;
-    background-color: #fd7921; /* สีเทาเข้ม */
+    background-color: #FF710B; /* สีเทาเข้ม */
     display: flex;
     align-items: center;
     justify-content: center;

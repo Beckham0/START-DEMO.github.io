@@ -6,7 +6,7 @@
 
 
 header {
-    background-color: #fe7009 !important;
+    background-color: #FF710B !important;
 }
 
 /* 
@@ -127,7 +127,7 @@ a {
 }
 
 .Web-header {
-    background-color: #fd7921;
+    background-color: #FF710B;
     color: white;
     display: flex;
     justify-content: space-between;
@@ -267,13 +267,12 @@ a {
     text-align: center;
     padding: 10px;
     margin: 0 auto;
-
 }
 
 .item1 h1 {
-    background-color: #fd7921;
+    background-color: #FF710B;
     color: #fff;
-    padding: 10px 0;
+    padding: 10px 0px;
     margin: 0;
     width: calc(100%);
     font-size: 1.9rem;
@@ -306,7 +305,7 @@ a {
 }
 
 .item3 h1 {
-    color: #fd7921;
+    color: #FF710B;
     padding: 10px 0;
     font-size: 1.9rem;
     margin-block-start: 0;
@@ -358,7 +357,7 @@ a {
 
 /* ปรับสีสำหรับแต่ละกลุ่ม */
 .buttons2 a {
-    background-color: rgb(252, 122, 0);
+    background-color: #FF710B;
 }
 
 .buttons3 a {
@@ -455,7 +454,7 @@ a {
 }
 
 .buttons71 .highlight {
-    color: #ff6600;
+    color:#FF710B;
 }
 
 .buttons71 p {
@@ -507,7 +506,7 @@ a {
 
 .service-card {
 
-    background-color: #FF5719;
+    background-color: #FF710B;
     border-radius: 20px;
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
     margin: 10px;
@@ -519,7 +518,7 @@ a {
 
 .service-card1 {
     text-align: center;
-    background-color: #FF5719;
+    background-color: #FF710B;
     border-radius: 0 0 8px 8px;
     max-width: 600px;
     overflow: hidden;
@@ -563,7 +562,7 @@ a {
 }
 
 .service-card h3 {
-    color: #ff5e00;
+    color: #FF710B;
     margin: 5px 0;
 }
 
@@ -601,7 +600,7 @@ body {
     justify-content: space-around;
     flex-wrap: wrap;
     text-align: center;
-    background-color: #ff5722;
+    background-color: #FF710B;
     padding: 20px;
     color: white;
     font-size: 24px;
@@ -639,7 +638,7 @@ body {
 }
 
 .pr-content h2 {
-    color: #ff5722;
+    color: #FF710B;
     font-size: 30px;
     margin-bottom: 10px;
 }
@@ -656,7 +655,7 @@ body {
 }
 
 .pr-content ul li {
-    background-color: #ff5722;
+    background-color: #FF710B;
     color: white;
     margin-bottom: 10px;
     padding: 10px;
@@ -783,7 +782,7 @@ body {
 .news-c a {
     text-decoration: none;
     font-weight: bold;
-    color: #ff5e00;
+    color: #FF710B;
     font-size: 21px;
     line-height: 1.7;
 }
@@ -818,7 +817,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #f25c23;
+    background-color: #FF710B;
 }
 
     .form {
@@ -942,7 +941,7 @@ body {
 }
 
 .footer-section h3 {
-    color: #ff6600;
+    color: #FF710B;
     margin-bottom: 10px;
     font-size: 32px;
     line-height: 1.2;
@@ -950,7 +949,7 @@ body {
 }
 
 .footer-section h4 {
-    color: #ff6600;
+    color: #FF710B;
     margin-bottom: 15px;
     font-size: 20px;
     line-height: 1.2;
