@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Example</title>
+    <style>
+        /* สไตล์สำหรับคอนเทนเนอร์ */
+        .from-container {
+            background-color: #ff5e00;
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            grid-template-rows: auto;
+            column-gap: 10px;
+            row-gap: 5px;
+            height: auto;
+            padding: 5px 20px;
+        }
+
+        /* สไตล์สำหรับกล่องแต่ละอัน */
+        .item{
+            background: #ff5e00;
+            box-shadow: #000000;
+        }
+
+        .item-1{
+            grid-column: 1 / 5;
+        }
+
+        .item-2{
+            grid-column: span 5 / 5;
+        }
+
+        .item-3{
+            grid-column: span 3 / 3;
+        }
+
+        .item-4{
+            grid-column: 3 / 5;
+        }
+
+        .item-5{
+            grid-column: span 4 / 5;
+        }
+
+        .item-6{
+            grid-column: span 4 / 5;
+        }
+
+        .item-7{
+            grid-column: span 4 / 5;
+        }
+
+        .item-8{
+            grid-column: span 4 / 5;
+        }
+
+        .item-9{
+            grid-column: span 4 / 5;
+        }
+
+        .item-10{
+            grid-column: span 4 / 5;
+        }
+
+
+        
+    .item-1 h1 {
+        color: white;
+        text-align: center;
+        margin-bottom: 10px;
+        font-size: 40px;
+        line-height: 1.2;
+    }
+
+    .item label {
+        display: block;
+        color: white;
+        margin-bottom: 5px;
+        font-size: 25px;
+        line-height: 1.2;
+    }
+
+    .item input,
+    .item textarea,
+    .item select,
+    .item button {
+        width: 100%;
+        padding: 10px 0;
+        margin-bottom: 15px;
+        border: none;
+        border-radius: 1px;
+        font-size: 25px;
+        line-height: 1.2;
+    }
+
+    .item input {
+        background-color: white;
+    }
+
+    .itemtextarea {
+        background-color: white;
+        
+    }
+
+    .item select {
+        background-color: white;
+    }
+
+    .item button {
+        background-color: #1fc3d8;
+        color: white;
+        font-size: 25px;
+        cursor: pointer;
+    }
+
+    .item button:hover {
+        background-color: #17a1b3;
+    }
+
+        
+    </style>
+</head>
+<body>
+
+    <div class="from-container">
+        <div class="item item-1"><h1>ติดต่อเรา</h1></div>
+        <div class="item item-2">
+            <label for="name">ชื่อ</label>
+            <input type="text" id="name" placeholder="Name">
+        </div>
+        <div class="item item-3">
+            <label for="phone">เบอร์โทรศัพท์</label>
+            <input type="text" id="phone" placeholder="08xxxxxxx">
+        </div>
+        <div class="item item-4">
+            <label for="email">อีเมล์</label>
+            <input type="email" id="email" placeholder="Email">
+        </div>
+        <div class="item item-5">
+            <label for="website">เว็บไซต์</label>
+            <input type="text" id="website" placeholder="www.google.com">
+        </div>
+        <div class="item item-6">
+            <label for="service">บริการ</label>
+                <select id="service">
+                    <option value="smart-rank">SMART RANK</option>
+                    <option value="other">Other</option>
+                </select>
+        </div>
+        <div class="item item-7">
+            <label for="message">ข้อความ</label>
+            <textarea id="message" placeholder="Message"></textarea>
+        </div>
+        <div class="item item-8">
+            <button type="submit">ยืนยัน</button>
+        </div>
+        <div class="item item-9">
+        </div>
+        <div class="item item-10">
+
+        </div>
+    </div>
+
+</body>
+</html>

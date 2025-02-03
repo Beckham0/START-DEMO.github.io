@@ -820,34 +820,87 @@ body {
     background-color: #FF710B;
 }
 
-    .form {
+    .from {
         display: flex;
         align-items: center;
         justify-content: center;
         flex-wrap: wrap; /* เพื่อให้ส่วนต่าง ๆ อยู่ในพื้นที่ขนาดเล็ก */
         max-width:100%; /* กำหนดขนาดสูงสุดของ container */
         margin: auto;
-        height: 0 150px;
+        height: 0 50px;
     }
 
-    .form-container {
-        flex: 1 1 calc(50% - 10px);
-        /* min-width: 500px; กำหนดขนาดขั้นต่ำของฟอร์ม */
-        padding: 30px;
-        width: 50%;
-        background-color: transparent;
-        background-image: linear-gradient(180deg, #FF5719 0%, #F38860 100%);
-    }
+          /* สไตล์สำหรับคอนเทนเนอร์ */
+        .from-container {
+            flex: 1 1 calc(50% - 10px);
+            background-color: #ff5e00;
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            grid-template-rows: auto;
+            column-gap: 10px;
+            row-gap: 5px;
+            height: auto;
+            padding: 5px 20px;
+        }
 
-    .form-container h1 {
+        /* สไตล์สำหรับกล่องแต่ละอัน */
+        .itemfrom {
+            background: #ff5e00;
+            box-shadow: #000000;
+        }
+
+        .itemfrom-1{
+            margin-top: 40px;
+            grid-column: 1 / 5;
+        }
+
+        .itemfrom-2{
+            grid-column: span 5 / 5;
+        }
+
+        .itemfrom-3{
+            grid-column: span 3 / 3;
+        }
+
+        .itemfrom-4{
+            grid-column: 3 / 5;
+        }
+
+        .itemfrom-5{
+            grid-column: span 4 / 5;
+        }
+
+        .itemfrom-6{
+            grid-column: span 4 / 5;
+        }
+
+        .itemfrom-7{
+            grid-column: span 4 / 5;
+        }
+
+        .itemfrom-8{
+            grid-column: span 4 / 5;
+        }
+
+        .itemfrom-9{
+            grid-column: span 4 / 5;
+        }
+
+        .itemfrom-10{
+            grid-column: span 4 / 5;
+        }
+
+
+        
+    .itemfrom-1 h1 {
         color: white;
         text-align: center;
-        margin-bottom: 40px;
+        margin-bottom: 10px;
         font-size: 40px;
         line-height: 1.2;
     }
 
-    .form-container label {
+    .itemfrom label {
         display: block;
         color: white;
         margin-bottom: 5px;
@@ -855,43 +908,44 @@ body {
         line-height: 1.2;
     }
 
-    .form-container input,
-    .form-container textarea,
-    .form-container select,
-    .form-container button {
+    .itemfrom input,
+    .itemfrom textarea,
+    .itemfrom select,
+    .itemfrom button {
         width: 100%;
-        padding: 10px;
+        padding: 10px 0;
         margin-bottom: 15px;
         border: none;
-        border-radius: 5px;
+        border-radius: 1px;
         font-size: 25px;
         line-height: 1.2;
     }
 
-    .form-container input {
+    .itemfrom input {
         background-color: white;
     }
 
-    .form-container textarea {
+    .itemfrom textarea {
         background-color: white;
         
     }
 
-    .form-container select {
+    .itemfrom select {
         background-color: white;
     }
 
-    .form-container button {
+    .itemfrom button {
         background-color: #1fc3d8;
         color: white;
         font-size: 25px;
         cursor: pointer;
     }
 
-    .form-container button:hover {
+    .itemfrom button:hover {
         background-color: #17a1b3;
     }
 
+    
     .image-container {
         flex: 1 1 calc(50% - 10px);
         min-width: 500px;
