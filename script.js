@@ -57,8 +57,8 @@ const swiper = new Swiper('.slider-wrapper', {
     cancel.style.transform = "rotate(0deg)"; 
     chaty.style.transform = "rotate(360deg)"; 
     
-    call.style.bottom= "165px"; 
-    line.style.bottom= "105px";  
+    call.style.bottom= "140px"; 
+    line.style.bottom= "80px";  
     
   });
   cancel.addEventListener('click', () =>{
@@ -74,6 +74,6 @@ const swiper = new Swiper('.slider-wrapper', {
     chaty.style.transform = "rotate(0deg)"; 
     cancel.style.transform = "rotate(-360deg)"; 
 
-    call.style.bottom= "46px"; 
-    line.style.bottom= "46px"; 
+    call.style.bottom= "21px"; 
+    line.style.bottom= "21px"; 
   });

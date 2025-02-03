@@ -148,8 +148,8 @@ body{
 
 .chaty-channel-list{
   position: fixed;
-  bottom: 100px;
-  right: 100px;
+  bottom: 75px;
+  right: 80px;
   z-index: 10001;
 }
 .chaty-channel-list svg{
