@@ -859,10 +859,12 @@ body {
         }
 
         .itemfrom-3{
+            padding: 0 10px;
             grid-column: span 3 / 3;
         }
 
         .itemfrom-4{
+            padding: 0 10px;
             grid-column: 3 / 5;
         }
 
@@ -896,7 +898,7 @@ body {
         color: white;
         text-align: center;
         margin-bottom: 10px;
-        font-size: 40px;
+        font-size: 60px;
         line-height: 1.2;
     }
 
@@ -913,7 +915,7 @@ body {
     .itemfrom select,
     .itemfrom button {
         width: 100%;
-        padding: 10px 0;
+        padding: 5px 0;
         margin-bottom: 15px;
         border: none;
         border-radius: 1px;
