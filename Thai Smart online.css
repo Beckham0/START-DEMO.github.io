@@ -273,10 +273,11 @@ a {
     background-color: #FF710B;
     color: #fff;
     padding: 10px 0px;
-    margin: 0;
+    margin: 2px;
     width: calc(100%);
-    font-size: 1.9rem;
+    font-size: 2rem;
     margin-bottom: 20px;
+    font-weight: bold; /* หรือใช้ค่า 700 */
 }
 
 .item1 p {
@@ -284,7 +285,7 @@ a {
     padding: 10px 0;
     margin: 0;
     width: calc(100%);
-    font-size: 1.6rem;
+    font-size: 1.4rem;
 }
 
 .item2 {
@@ -310,6 +311,7 @@ a {
     font-size: 1.9rem;
     margin-block-start: 0;
     margin-block-end: .0rem;
+    font-weight: bold; /* หรือใช้ค่า 700 */
 }
 
 .buttons {
@@ -448,13 +450,15 @@ a {
 }
 
 .buttons71 h1 {
-    font-size: 36px;
+    font-size: 40px;
     margin: 0 0 20px;
     color: #000;
+    font-weight: bold; /* หรือใช้ค่า 700 */
 }
 
 .buttons71 .highlight {
     color:#FF710B;
+    font-weight: bold; /* หรือใช้ค่า 700 */
 }
 
 .buttons71 p {
@@ -639,8 +643,9 @@ body {
 
 .pr-content h2 {
     color: #FF710B;
-    font-size: 30px;
+    font-size: 32px;
     margin-bottom: 10px;
+    font-weight: bold; /* หรือใช้ค่า 700 */
 }
 
 .pr-content p {
@@ -856,6 +861,7 @@ body {
 
         .itemfrom-2{
             grid-column: span 5 / 5;
+            padding: 0 8px;
         }
 
         .itemfrom-3{
@@ -900,6 +906,7 @@ body {
         margin-bottom: 10px;
         font-size: 60px;
         line-height: 1.2;
+        font-weight: bold; 
     }
 
     .itemfrom label {
@@ -925,7 +932,16 @@ body {
 
     .itemfrom input {
         background-color: white;
+        border: 2px solid #000000;
+        border-radius: 5px; /* ทำให้ขอบโค้งมน */
+        padding: 8px; /* เพิ่มช่องว่างภายใน */
+        outline: none; /* เอาเส้นขอบที่เกิดจากการโฟกัสออก */
     }
+
+    .itemfrom input:focus {
+        border-color: #e74c3c; /* เปลี่ยนสีขอบเมื่อคลิกหรือโฟกัส */
+        box-shadow: 0 0 5px rgba(231, 76, 60, 0.7); /* เพิ่มเอฟเฟกต์เงา */
+      }
 
     .itemfrom textarea {
         background-color: white;
