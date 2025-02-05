@@ -945,11 +945,21 @@ body {
 
     .itemfrom textarea {
         background-color: white;
+        border: 2px solid #000000;
+        border-radius: 5px; /* ทำให้ขอบโค้งมน */
+        padding: 8px; /* เพิ่มช่องว่างภายใน */
+        outline: none; /* เอาเส้นขอบที่เกิดจากการโฟกัสออก */
         
     }
 
+    .itemfrom textarea :focus {
+        border-color: #e74c3c; /* เปลี่ยนสีขอบเมื่อคลิกหรือโฟกัส */
+        box-shadow: 0 0 5px rgba(231, 76, 60, 0.7); /* เพิ่มเอฟเฟกต์เงา */
+      }
+
     .itemfrom select {
         background-color: white;
+        border: 2px solid #000000;
     }
 
     .itemfrom button {
