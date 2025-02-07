@@ -1,7 +1,7 @@
 .pop-up {
     transform: scale(0.5); /* ย่อก่อนเริ่ม */
     opacity: 0;
-    transition: transform 0.5s ease-out, opacity 0.8s ease-out;
+    transition: transform 0.7s ease-out, opacity 1s ease-out;
 }
 
 .pop-up.show {
@@ -12,7 +12,7 @@
 .pop-up1 {
     transform: scale(0.5); /* ย่อก่อนเริ่ม */
     opacity: 0;
-    transition: transform 0.5s ease-out, opacity 0.8s ease-out;
+    transition: transform 0.7s ease-out, opacity 1s ease-out;
 }
 
 .pop-up1.show {
@@ -23,7 +23,7 @@
 .pop-up2 {
     transform: scale(0.5); /* ย่อก่อนเริ่ม */
     opacity: 0;
-    transition: transform 0.5s ease-out, opacity 0.8s ease-out;
+    transition: transform 0.7s ease-out, opacity 1s ease-out;
 }
 
 .pop-up2.show {
@@ -34,7 +34,7 @@
 .pop-up3 {
     transform: scale(0.5); /* ย่อก่อนเริ่ม */
     opacity: 0;
-    transition: transform 0.5s ease-out, opacity 0.8s ease-out;
+    transition: transform 0.7s ease-out, opacity 1s ease-out;
 }
 
 .pop-up3.show {
@@ -45,7 +45,7 @@
 .pop-up4 {
     transform: scale(0.5); /* ย่อก่อนเริ่ม */
     opacity: 0;
-    transition: transform 0.5s ease-out, opacity 0.8s ease-out;
+    transition: transform 0.7s ease-out, opacity 1s ease-out;
 }
 
 .pop-up4.show {
@@ -56,7 +56,7 @@
 .pop-up5 {
     transform: scale(0.5); /* ย่อก่อนเริ่ม */
     opacity: 0;
-    transition: transform 0.5s ease-out, opacity 0.8s ease-out;
+    transition: transform 0.7s ease-out, opacity 1s ease-out;
 }
 
 .pop-up5.show {
@@ -67,7 +67,7 @@
 .pop-up6 {
     transform: scale(0.5); /* ย่อก่อนเริ่ม */
     opacity: 0;
-    transition: transform 0.5s ease-out, opacity 0.8s ease-out;
+    transition: transform 0.7s ease-out, opacity 1s ease-out;
 }
 
 .pop-up6.show {
@@ -78,7 +78,7 @@
 .pop-up7 {
     transform: scale(0.5); /* ย่อก่อนเริ่ม */
     opacity: 0;
-    transition: transform 0.5s ease-out, opacity 0.8s ease-out;
+    transition: transform 0.7s ease-out, opacity 1s ease-out;
 }
 
 .pop-up7.show {
@@ -89,7 +89,7 @@
 .pop-up8 {
     transform: scale(0.5); /* ย่อก่อนเริ่ม */
     opacity: 0;
-    transition: transform 0.5s ease-out, opacity 0.8s ease-out;
+    transition: transform 0.7s ease-out, opacity 1s ease-out;
 }
 
 .pop-up8.show {
@@ -100,7 +100,7 @@
 .pop-up9 {
     transform: scale(0.5); /* ย่อก่อนเริ่ม */
     opacity: 0;
-    transition: transform 0.5s ease-out, opacity 0.8s ease-out;
+    transition: transform 0.7s ease-out, opacity 1s ease-out;
 }
 
 .pop-up9.show {
@@ -111,7 +111,7 @@
 .pop-up10 {
     transform: scale(0.5); /* ย่อก่อนเริ่ม */
     opacity: 0;
-    transition: transform 0.5s ease-out, opacity 0.8s ease-out;
+    transition: transform 0.7s ease-out, opacity 1s ease-out;
 }
 
 .pop-up10.show {

@@ -699,9 +699,12 @@ body {
 }
 
 .PARTNERS-image img {
-    width: 100%;
     height: auto;
-    justify-content: center;
+    width: 100%;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    object-fit: cover;
 }
 
 .image-row {
