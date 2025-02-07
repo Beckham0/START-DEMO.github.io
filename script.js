@@ -77,3 +77,4 @@ const swiper = new Swiper('.slider-wrapper', {
     call.style.bottom= "21px"; 
     line.style.bottom= "21px"; 
   });
+  
