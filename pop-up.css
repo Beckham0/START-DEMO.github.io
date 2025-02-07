@@ -8,3 +8,25 @@
     transform: scale(1); /* ขยายเมื่อแสดง */
     opacity: 1;
 }
+
+.pop-up1 {
+    transform: scale(0.5); /* ย่อก่อนเริ่ม */
+    opacity: 0;
+    transition: transform 0.5s ease-out, opacity 0.8s ease-out;
+}
+
+.pop-up1.show {
+    transform: scale(1); /* ขยายเมื่อแสดง */
+    opacity: 1;
+}
+
+.pop-up2 {
+    transform: scale(0.5); /* ย่อก่อนเริ่ม */
+    opacity: 0;
+    transition: transform 0.5s ease-out, opacity 0.8s ease-out;
+}
+
+.pop-up2.show {
+    transform: scale(1); /* ขยายเมื่อแสดง */
+    opacity: 1;
+}
