@@ -1,5 +1,147 @@
 @keyframes zoomIn{from{opacity:0;transform:scale3d(.3,.3,.3)}50%{opacity:1}}.zoomI{animation-name:zoomIn}
 
+body {
+  margin: 0;
+  /* font-family: Arial, sans-serif; */
+font-family: "K2D", serif;
+font-weight: 400;
+font-style: normal;
+}
+
+.Web-header {
+  background-color: #FF710B;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  position: relative;
+}
+
+.logo a{
+  font-size: 3rem;
+  color: antiquewhite;
+  text-decoration: none;
+}
+
+.logo img{
+  width: 50%;
+  border-radius: 1px;
+}
+
+
+.window {
+  display: flex;
+  gap: 20px;
+  color: #000000;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.window.active {
+  display: flex; /* แสดงเมนูเมื่อคลาส active ถูกเพิ่ม */
+}
+
+.menu {
+  display: flex;
+  gap: 20px;
+}
+
+.menu.active {
+  display: flex; /* แสดงเมนูเมื่อคลาส active ถูกเพิ่ม */
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.menu a:hover {
+  color: #2fc4ff;
+}
+
+/* Hamburger menu toggle button */
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 17px;
+  cursor: pointer;
+  align-items: center;
+  gap: 5px;
+}
+
+.menu-toggle .hamburger-icon {
+  width: 20px;
+  height: 2px;
+  background: white;
+  position: relative;
+}
+
+.menu-toggle .hamburger-icon::before,
+.menu-toggle .hamburger-icon::after {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 2px;
+  background: white;
+  left: 0;
+}
+
+.menu-toggle .hamburger-icon::before {
+  top: -6px;
+}
+
+.menu-toggle .hamburger-icon::after {
+  top: 6px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+.menu {
+    display: none;
+    flex-direction: column;
+    background-color: #ffffff;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    left: 0;
+    padding: 10px;
+}
+
+.window {
+  color: #ffffff;
+  background-color: #000;
+}
+
+.menu a {
+    color: rgb(0, 0, 0);
+    margin: 7px 0;
+    text-align: start;
+}
+
+.menu a:hover {
+    color: #ffffff;
+    background-color: #000;
+    
+}
+
+.menu-toggle {
+    display: flex;
+}
+}
+
+/* Show menu when active */
+.menu.active {
+display: flex;
+}
+
 .Smart_web_Design{
     background-image: url("https://thaismartonline.com/wp-content/uploads/2024/05/IMG_6883.jpg");
   background-size: cover;

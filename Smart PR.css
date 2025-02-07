@@ -43,61 +43,65 @@ body {
 }
 
 .menu {
-    display: flex;
-    gap: 20px;
+  display: flex;
+  gap: 30px;
 }
 
 .menu.active {
-    display: flex; /* แสดงเมนูเมื่อคลาส active ถูกเพิ่ม */
+  display: flex;
+  z-index: 2;
+  /* แสดงเมนูเมื่อคลาส active ถูกเพิ่ม */
 }
 
 .menu a {
-    color: white;
-    text-decoration: none;
-    font-size: 15px;
-    font-weight: bold;
-    text-transform: uppercase;
+  color: white;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: 0.5s all;
 }
 
 .menu a:hover {
-    color: #2fc4ff;
+  color: #2fc4ff;
+
 }
 
 /* Hamburger menu toggle button */
 .menu-toggle {
-    display: none;
-    background: none;
-    border: none;
-    color: white;
-    font-size: 17px;
-    cursor: pointer;
-    align-items: center;
-    gap: 5px;
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 17px;
+  cursor: pointer;
+  align-items: center;
+  gap: 5px;
 }
 
 .menu-toggle .hamburger-icon {
-    width: 20px;
-    height: 2px;
-    background: white;
-    position: relative;
+  width: 20px;
+  height: 2px;
+  background: white;
+  position: relative;
 }
 
 .menu-toggle .hamburger-icon::before,
 .menu-toggle .hamburger-icon::after {
-    content: '';
-    position: absolute;
-    width: 20px;
-    height: 2px;
-    background: white;
-    left: 0;
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 2px;
+  background: white;
+  left: 0;
 }
 
 .menu-toggle .hamburger-icon::before {
-    top: -6px;
+  top: -6px;
 }
 
 .menu-toggle .hamburger-icon::after {
-    top: 6px;
+  top: 6px;
 }
 
 /* Responsive Styles */
@@ -110,29 +114,41 @@ body {
       top: 100%;
       right: 0;
       left: 0;
-      padding: 10px;
+      padding: 12px;
+      font-size: small;
+      gap: 0px;
+      width: auto;
   }
 
-  .window {
+  .menu .window {
     color: #ffffff;
-    background-color: #000;
+    background-color: #33373da0;
+    padding: inherit;
+    text-align: start;
+
 }
 
   .menu a {
       color: rgb(0, 0, 0);
-      margin: 7px 0;
+      padding: inherit;
       text-align: start;
+
   }
 
   .menu a:hover {
       color: #ffffff;
-      background-color: #000;
-      
+      background-color: #33373da0;
+
   }
 
   .menu-toggle {
       display: flex;
   }
+
+  .image-container {
+           min-width: 100% !important;
+           
+    }
 }
 
 /* Show menu when active */
@@ -178,8 +194,9 @@ body {
     padding: 10px 10px;
     margin: 0;
     width: calc(100%);
-    font-size: 1.9rem;
+    font-size: 2.1rem;
     text-align: start;
+    font-weight: bold; /* หรือใช้ค่า 700 */
    /* margin-bottom: 20px;*/
 }
 
