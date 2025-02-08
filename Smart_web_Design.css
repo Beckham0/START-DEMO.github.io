@@ -1,3 +1,5 @@
+@keyframes zoomIn{from{opacity:0;transform:scale3d(.3,.3,.3)}50%{opacity:1}}.zoomI{animation-name:zoomIn}
+
 body {
   margin: 0;
   /* font-family: Arial, sans-serif; */
@@ -149,6 +151,15 @@ display: flex;
   display: grid;
   margin-block-end: 10px;
 }
+
+.elementor-container {
+  display: flex;
+  margin-right: auto;
+  margin-left: auto;
+  position: relative;
+  max-width: 1140px;
+  min-width: inherit;
+}
 .drop_image{
     background-color: #0F0202;
   opacity: 0.5;
@@ -157,17 +168,222 @@ display: flex;
   height: 100%;
   position: absolute;
 }
+
+.topic-1{
+  max-width: 1140px;
+  min-width: inherit;
+}
 .topic-1 label{
     background-color: transparent;
     background-image: linear-gradient(90deg, #FF5719 0%, #F38860 100%);
   display: block;
   margin: 0px 0px 0px 0px;
-  padding: 10px 10px 10px 10px;
+  padding: 5px 5px 5px 5px;
   text-align: center;
-  margin-block-end: 10px;
+  
   color: #FFFFFF;
   font-family: "Prompt", Sans-serif;
   font-size: 30px;
   font-weight: 600;
 
+
+}
+
+.image_woman{
+  width: 50%;
+  animation-duration: 1.25s;
+  animation-name:zoomIn;
+  padding: 10px;
+}
+
+.zoomin{
+  animation-duration: 1.25s;
+  animation-name:zoomIn;
+}
+
+.description{
+  display: flex;
+  margin: 0 10px;
+  align-items: center;
+}
+
+
+.block_choice{
+  width: 100%;
+  height: 10%;
+  background: #FF5719;
+  padding: 2%;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+}
+
+.uc_content{
+  background-color: #ffffff;
+  font-family: "Prompt", Sans-serif;
+  font-weight: 400;
+  color: #000000;
+ 
+    height: 0; /* เริ่มต้นที่ความสูง 0 */
+    transition: height 0.3s ease;
+    overflow: hidden;
+}
+
+.uc_content.active {
+    height: 70px; /* ความสูงเมื่อ active */
+}
+.uc_content p {
+  padding: 20px 20px 20px 20px;
+  margin-bottom: 15px;
+}
+
+
+.m-10{
+  margin: 10px 10px;
+}
+.c-wh{
+color:#FFFFFF;
+}
+
+.check{
+  width: 25px;
+  height: 25px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+}
+.check span {
+  color: #FF710B;
+  font-size: 16px;
+}
+
+.block_container{
+  margin: 20px;
+  display: block;
+  background-color: #FF5719;
+  text-align: center;
+  padding: 20px;
+  position: relative;
+  color: #FFF;
+  font-size: 20px;
+font-weight: 400;
+}
+.block_all{
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+.icon_all{
+  color: #FFFFFF;
+  fill: #FFFFFF;
+  width: 15%;
+  position: relative;
+  margin-bottom: 10px;
+}
+.block_container p{
+ position: relative;
+ font-weight: bold;
+}
+.card_service{
+  background:#f9fafa;
+  display: block;
+  position: relative;
+
+  width: 33%;
+  margin: 10px;
+}
+.card_service h3{
+padding: 15px;
+color: #FFFFFF;
+font-weight: 600;
+}
+
+.card_service h2{
+padding: 15px;
+color: #595959;
+font-weight: 600;
+}
+
+.card_p{
+  background-color:#f9fafa;
+  position: relative;
+}
+.item1 h3{
+  background-color:#FF5719;;
+  position: relative;
+}
+.hr{
+  border-top-style: solid;
+  border-top-color: #717171;
+  border-top-width: 2px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  content: "";
+  width: 80%;
+  margin-inline: 30px;
+}
+.list_order{
+  font-size: 14px;
+  line-height: 1;
+  text-align: left;
+}
+.ul_order{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  color: var(--e-price-table-features-list-color);
+}
+.ul_order li {
+  font-size: 14px;
+  line-height: 1;
+  margin: 0;
+  padding: 0;
+}
+
+.buuton_monny{
+  background-color: #02eff3;
+  color: #FFF;
+  padding: 15px;
+  font-weight: 600;
+  border-radius: 5px;
+  border: "";
+  border: 0 solid;
+}
+
+@media (max-width: 768px) {
+  .card_service{
+    width: 100% !important;
+  }
+  .description{
+    display: block;
+  }
+  .description p{
+    width: 100% !important;
+  }
+  .image_woman{
+    width: 100%;
+  } 
+  .Smart_web_Design{
+    padding: 100px 0;
+  }
+  .block_all{
+    display: block;
+  }
+  .block_container div{
+    position: relative !important;
+  }
+  .block_container p{
+    font-size: 15px;
+  }
+  .item1 div {
+    display: block;
+  }
+  .gg div{
+    display:  block !important;
+  }
 }
