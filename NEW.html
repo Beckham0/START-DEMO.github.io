@@ -1,20 +1,67 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="th">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Scroll Scale Pop-up</title>
-    <link rel="stylesheet" href="pop-up.css">
-    <link rel="stylesheet" href="Thai Smart online.css">
+    <title>Pop-up Animation</title>
+    <style>
+        .pop-up18 {
+    opacity: 0;
+    visibility: hidden;
+    font-size: 24px;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.show span {
+    opacity: 0;
+    display: inline-block;
+    animation: fadeIn 0.5s forwards;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+    </style>
 </head>
 <body>
 
-    <h2>เลื่อนลงเพื่อดู Pop-up แบบขยาย</h2>
+    <div class="pop-up18">SMART MARKETING</div>
 
-    <div style="height: 100vh;"></div> <!-- เว้นช่องว่างก่อน pop-up -->
 
-    <div class="pop-up"><img src="images/Smart PR.jpg" alt=""></section></div>
+    <script>
+document.addEventListener("DOMContentLoaded", () => {
+    const popUp = document.querySelector(".pop-up18");
+    const text = popUp.textContent;
+    popUp.textContent = ""; // ล้างข้อความเดิมก่อน
+    popUp.style.opacity = "1"; 
+    popUp.style.visibility = "visible";
 
-    <script src="pop-up.js"></script>
+    // แบ่งข้อความออกเป็นตัวอักษร และเพิ่ม `<span>` รอบแต่ละตัว
+    text.split("").forEach((char, index) => {
+        const span = document.createElement("span");
+        span.textContent = char;
+        span.style.animationDelay = `${index * 0.1}s`; // ให้ตัวอักษรปรากฏทีละตัว
+        popUp.appendChild(span);
+    });
+
+    // ใช้ IntersectionObserver ให้ข้อความเริ่มแสดงเมื่อเข้าสู่หน้าจอ
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                popUp.classList.add("show");
+                observer.unobserve(popUp);
+            }
+        });
+    });
+
+    observer.observe(popUp);
+});
+
+    </script>
+
 </body>
 </html>
+
