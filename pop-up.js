@@ -173,3 +173,131 @@ document.addEventListener("DOMContentLoaded", () => {
 
     observer.observe(popUp);
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+    const popUp = document.querySelector(".pop-up11");
+
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                popUp.classList.add("show");
+            } else {
+                popUp.classList.remove("show");
+            }
+        });
+    });
+
+    observer.observe(popUp);
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+    const popUp = document.querySelector(".pop-up12");
+
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                popUp.classList.add("show");
+            } else {
+                popUp.classList.remove("show");
+            }
+        });
+    });
+
+    observer.observe(popUp);
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+    const popUp = document.querySelector(".pop-up13");
+
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                popUp.classList.add("show");
+            } else {
+                popUp.classList.remove("show");
+            }
+        });
+    });
+
+    observer.observe(popUp);
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+    const popUp = document.querySelector(".pop-up14");
+
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                popUp.classList.add("show");
+            } else {
+                popUp.classList.remove("show");
+            }
+        });
+    });
+
+    observer.observe(popUp);
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+    const popUp = document.querySelector(".pop-up15");
+
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                popUp.classList.add("show");
+            } else {
+                popUp.classList.remove("show");
+            }
+        });
+    });
+
+    observer.observe(popUp);
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+    const popUp = document.querySelector(".pop-up16");
+
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                popUp.classList.add("show");
+            } else {
+                popUp.classList.remove("show");
+            }
+        });
+    });
+
+    observer.observe(popUp);
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+    const popUp = document.querySelector(".pop-up17");
+
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                popUp.classList.add("show");
+            } else {
+                popUp.classList.remove("show");
+            }
+        });
+    });
+
+    observer.observe(popUp);
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+    const popUp = document.querySelector(".pop-up18");
+
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                popUp.classList.add("show");
+            } else {
+                popUp.classList.remove("show");
+            }
+        });
+    });
+
+    observer.observe(popUp);
+});

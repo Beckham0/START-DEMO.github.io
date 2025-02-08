@@ -118,3 +118,91 @@
     transform: scale(1); /* ขยายเมื่อแสดง */
     opacity: 1;
 }
+
+.pop-up11 {
+    transform: scale(0.5); /* ย่อก่อนเริ่ม */
+    opacity: 0;
+    transition: transform 0.7s ease-out, opacity 1s ease-out;
+}
+
+.pop-up11.show {
+    transform: scale(1); /* ขยายเมื่อแสดง */
+    opacity: 1;
+}
+
+.pop-up12 {
+    transform: scale(0.5); /* ย่อก่อนเริ่ม */
+    opacity: 0;
+    transition: transform 0.7s ease-out, opacity 1s ease-out;
+}
+
+.pop-up12.show {
+    transform: scale(1); /* ขยายเมื่อแสดง */
+    opacity: 1;
+}
+
+.pop-up13 {
+    transform: scale(0.5); /* ย่อก่อนเริ่ม */
+    opacity: 0;
+    transition: transform 0.7s ease-out, opacity 1s ease-out;
+}
+
+.pop-up13.show {
+    transform: scale(1); /* ขยายเมื่อแสดง */
+    opacity: 1;
+}
+
+.pop-up14 {
+    transform: scale(0.5); /* ย่อก่อนเริ่ม */
+    opacity: 0;
+    transition: transform 0.7s ease-out, opacity 1s ease-out;
+}
+
+.pop-up14.show {
+    transform: scale(1); /* ขยายเมื่อแสดง */
+    opacity: 1;
+}
+
+.pop-up15 {
+    transform: scale(0.5); /* ย่อก่อนเริ่ม */
+    opacity: 0;
+    transition: transform 0.7s ease-out, opacity 1s ease-out;
+}
+
+.pop-up15.show {
+    transform: scale(1); /* ขยายเมื่อแสดง */
+    opacity: 1;
+}
+
+.pop-up16 {
+    transform: scale(0.5); /* ย่อก่อนเริ่ม */
+    opacity: 0;
+    transition: transform 0.7s ease-out, opacity 1s ease-out;
+}
+
+.pop-up16.show {
+    transform: scale(1); /* ขยายเมื่อแสดง */
+    opacity: 1;
+}
+
+.pop-up17 {
+    transform: scale(0.5); /* ย่อก่อนเริ่ม */
+    opacity: 0;
+    transition: transform 0.7s ease-out, opacity 1s ease-out;
+}
+
+.pop-up17.show {
+    transform: scale(1); /* ขยายเมื่อแสดง */
+    opacity: 1;
+}
+
+.pop-up18 {
+    transform: scale(0.5); /* ย่อก่อนเริ่ม */
+    opacity: 0;
+    transition: transform 0.7s ease-out, opacity 1s ease-out;
+}
+
+.pop-up18.show {
+    transform: scale(1); /* ขยายเมื่อแสดง */
+    opacity: 1;
+}
