@@ -45,11 +45,13 @@ font-style: normal;
 
 .menu {
   display: flex;
-  gap: 20px;
+  gap: 30px;
 }
 
 .menu.active {
-  display: flex; /* แสดงเมนูเมื่อคลาส active ถูกเพิ่ม */
+  display: flex;
+  z-index: 2;
+  /* แสดงเมนูเมื่อคลาส active ถูกเพิ่ม */
 }
 
 .menu a {
@@ -58,10 +60,12 @@ font-style: normal;
   font-size: 15px;
   font-weight: bold;
   text-transform: uppercase;
+  transition: 0.5s all;
 }
 
 .menu a:hover {
   color: #2fc4ff;
+
 }
 
 /* Hamburger menu toggle button */
@@ -103,43 +107,56 @@ font-style: normal;
 
 /* Responsive Styles */
 @media (max-width: 768px) {
-.menu {
-    display: none;
-    flex-direction: column;
-    background-color: #ffffff;
-    position: absolute;
-    top: 100%;
-    right: 0;
-    left: 0;
-    padding: 10px;
-}
+  .menu {
+      display: none;
+      flex-direction: column;
+      background-color: #ffffff;
+      position: absolute;
+      top: 100%;
+      right: 0;
+      left: 0;
+      padding: 12px;
+      font-size: small;
+      gap: 0px;
+      width: auto;
+  }
 
-.window {
-  color: #ffffff;
-  background-color: #000;
-}
-
-.menu a {
-    color: rgb(0, 0, 0);
-    margin: 7px 0;
-    text-align: start;
-}
-
-.menu a:hover {
+  .menu .window {
     color: #ffffff;
-    background-color: #000;
-    
+    background-color: #33373da0;
+    padding: inherit;
+    text-align: start;
+
 }
 
-.menu-toggle {
-    display: flex;
-}
+  .menu a {
+      color: rgb(0, 0, 0);
+      padding: inherit;
+      text-align: start;
+
+  }
+
+  .menu a:hover {
+      color: #ffffff;
+      background-color: #33373da0;
+
+  }
+
+  .menu-toggle {
+      display: flex;
+  }
+
+  .image-container {
+           min-width: 100% !important;
+           
+    }
 }
 
 /* Show menu when active */
 .menu.active {
-display: flex;
+  display: flex;
 }
+
 
 .Smart_web_Design{
     background-image: url("https://thaismartonline.com/wp-content/uploads/2024/05/IMG_6883.jpg");
