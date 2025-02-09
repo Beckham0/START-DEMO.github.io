@@ -19,7 +19,6 @@ font-style: normal;
 }
 
 .logo a{
-  font-size: 3rem;
   color: antiquewhite;
   text-decoration: none;
 }
@@ -175,7 +174,7 @@ display: flex;
 }
 .topic-1 label{
     background-color: transparent;
-    background-image: linear-gradient(90deg, #FF5719 0%, #F38860 100%);
+    background-image: linear-gradient(90deg, #FF5719 0%, #FF710B 100%);
   display: block;
   margin: 0px 0px 0px 0px;
   padding: 5px 5px 5px 5px;
@@ -211,13 +210,14 @@ display: flex;
 .block_choice{
   width: 100%;
   height: 10%;
-  background: #FF5719;
+  background: #FF710B;
   padding: 2%;
   margin-top: 10px;
   display: flex;
   align-items: center;
   position: relative;
   cursor: pointer;
+  padding: 20px;
 }
 
 .uc_content{
@@ -265,7 +265,7 @@ color:#FFFFFF;
 .block_container{
   margin: 20px;
   display: block;
-  background-color: #FF5719;
+  background-color: #FF710B;
   text-align: center;
   padding: 20px;
   position: relative;
@@ -313,7 +313,7 @@ font-weight: 600;
   position: relative;
 }
 .item1 h3{
-  background-color:#FF5719;;
+  background-color:#FF710B;;
   position: relative;
 }
 .hr{

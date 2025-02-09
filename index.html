@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <!--  -->
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="Smart_web_Design.css" />
 
     <link rel="stylesheet" href="pop-up.css">
     <script src="pop-up.js"></script>
@@ -253,20 +254,40 @@
             <div class="pr-content">
                 <h2>โปรโมทธุรกิจให้โด่งดังด้วยสื่อชั้นแนวหน้า</h2>
                 <p>มาเริ่มโปรโมท นำธุรกิจคุณให้เป็นที่รู้จัก ด้วยการร่วมมือกับสื่อชั้นนำชื่อดัง เพื่อสร้างสรรค์ อัพเกรดติดสปัดให้แบรนด์คุณโด่งดัง น่าเชื่อถือ เป็นที่รู้จัก ต่อกลุ่มเป้าหมาย อย่างแข็งแกร่งที่เหนือกว่าคู่แข่ง</p>
-                <ul>
-                    <li>
-                        <span>ประชาสัมพันธ์โดยสื่อชั้นนำ</span>
-                        <span>+</span>
-                    </li>
-                    <li>
-                        <span>ให้คำปรึกษาครบวงจร</span>
-                        <span>+</span>
-                    </li>
-                    <li>
-                        <span>กลยุทธ์ที่มีประสิทธิภาพ</span>
-                        <span>+</span>
-                    </li>
-                </ul>
+                <div class="container topic-1">
+                    <div id="block_choice_1" class="block_choice">
+                        <div class="check"><span>✔</span></div>
+                        <span class="c-wh">Google Search</span>
+                        <h3 class="c-wh" style="right: 10px; position: absolute">+</h3>
+                    </div>
+                    <div style="display: block" class="uc_content" id="uc_content-1">
+                        <p></p>
+                    </div>
+                </div>
+    
+                <div class="container topic-1">
+                    <div id="block_choice_2" class="block_choice">
+                        <div class="check"><span>✔</span></div>
+                        <span class="c-wh">meta</span>
+                        <h3 class="c-wh" style="right: 10px; position: absolute">+</h3>
+                    </div>
+                    <div style="display: block" class="uc_content" id="uc_content-2">
+                        <p></p>
+                    </div>
+                </div>
+    
+                <div class="container topic-1">
+                    <div id="block_choice_3" class="block_choice">
+                        <div class="check"><span>✔</span></div>
+                        <span class="c-wh">กลยุทธที่มีประสิทธิภาพ</span>
+                        <h3 class="c-wh" style="right: 10px; position: absolute">+</h3>
+                    </div>
+                    <div style="display: block" class="uc_content" id="uc_content-3">
+                        <p></p>
+                    </div>
+                </div>
+                <br>
+    
                 <button>ปรึกษาเลย</button>
             </div>
         </div>
@@ -486,4 +507,33 @@
 <!--  -->
 <script src="script.js"></script>
 </body>
+
+<script>
+    const blockChoices = document.querySelectorAll('[id^="block_choice_"]');
+    const uc_content = document.querySelectorAll('[id^="uc_content-"]');
+    
+    blockChoices.forEach((blockChoice) => {
+    blockChoice.addEventListener("click", function (event) {
+      const targetId = event.target.id.replace(
+          "block_choice_",
+          "uc_content-"
+      );
+      const ucContent = document.getElementById(targetId);
+    
+      if (ucContent) {
+          if (ucContent.classList.contains("active")) {
+              // ตรวจสอบว่ามี active class หรือไม่
+              ucContent.classList.remove("active"); // ลบ active class ถ้ามี
+          } else {
+              uc_content.forEach((item) => {
+                  // ลบ active class จาก element อื่นๆ ก่อน
+                  item.classList.remove("active");
+              });
+              ucContent.classList.add("active"); // เพิ่ม active class ถ้าไม่มี
+          }
+      }
+    });
+    });
+    </script>
+
 </html>
