@@ -26,7 +26,7 @@
         <div class="logo"><a href="index.html"><img src="https://thaismartonline.com/wp-content/uploads/2024/07/cropped-IMG_0001-1.png" alt=""></a></div>
                </div>
                <nav class="menu">
-                   <a href="SMART RANK.html">SMART RANK</a>
+                   <a href="SMART RANK.html">Smart Rank</a>
                    <a href="Smart Marketing.html">Smart Marketing</a>
                    <nav class="window">Smart PR</nav>
                    <a href="Smart_web_Design.html">Smart Web Design</a>
@@ -416,7 +416,7 @@
 
   <div class="container">
     <section class="item1"><div class="pop-up14">
-        <h1>SMART MARKETING</h1></div>
+        <h1>SMART PR</h1></div>
     </section>
 
     <section class="item4">
@@ -440,11 +440,6 @@
   <script src="Menu.js">document.querySelector('.menu-toggle').addEventListener('click', () => {
       document.querySelector('.menu').classList.toggle('active');
   });</script>
-
-   <!-- add -->
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-<!--  -->
-<script src="script.js"></script>
 
 
 <body9>
@@ -507,15 +502,15 @@
     <div class="footer-section">
       <h3>เมนูหลัก</h3>
       <ul>
-        <li><a href="#">หน้าแรก</a></li>
+        <li><a href="index.html">หน้าแรก</a></li>
       </ul>
     </div>
     <div class="footer-section">
       <h3>บริการของเรา</h3>
       <ul>
-          <li><a href="SMART RANK.html">SMART WEB</a></li>
+          <li><a href="Smart_web_Design.html">SMART WEB</a></li>
           <li><a href="SMART RANK.html">SMART RANK</a></li>
-          <li><a href="#">SMART PR</a></li>
+          <li><a href="Smart PR.html">SMART PR</a></li>
           <li><a href="Smart Marketing.html">SMART MARKETING</a></li>
         </ul>
     </div>
@@ -553,37 +548,34 @@
   </div>
   </div>
 </div>
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-<!--  -->
-<script src="script.js"></script>
 </body>
-
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="script.js"></script>
 <script>
-  const blockChoices = document.querySelectorAll('[id^="block_choice_"]');
-  const uc_content = document.querySelectorAll('[id^="uc_content-"]');
-  
-  blockChoices.forEach((blockChoice) => {
-  blockChoice.addEventListener("click", function (event) {
-    const targetId = event.target.id.replace(
-        "block_choice_",
-        "uc_content-"
-    );
-    const ucContent = document.getElementById(targetId);
-  
-    if (ucContent) {
-        if (ucContent.classList.contains("active")) {
-            // ตรวจสอบว่ามี active class หรือไม่
-            ucContent.classList.remove("active"); // ลบ active class ถ้ามี
-        } else {
-            uc_content.forEach((item) => {
-                // ลบ active class จาก element อื่นๆ ก่อน
-                item.classList.remove("active");
-            });
-            ucContent.classList.add("active"); // เพิ่ม active class ถ้าไม่มี
-        }
-    }
-  });
-  });
-  </script>
+const blockChoices = document.querySelectorAll('[id^="block_choice_"]');
+const uc_content = document.querySelectorAll('[id^="uc_content-"]');
 
+blockChoices.forEach((blockChoice) => {
+blockChoice.addEventListener("click", function (event) {
+  const targetId = event.target.id.replace(
+      "block_choice_",
+      "uc_content-"
+  );
+  const ucContent = document.getElementById(targetId);
+
+  if (ucContent) {
+      if (ucContent.classList.contains("active")) {
+          // ตรวจสอบว่ามี active class หรือไม่
+          ucContent.classList.remove("active"); // ลบ active class ถ้ามี
+      } else {
+          uc_content.forEach((item) => {
+              // ลบ active class จาก element อื่นๆ ก่อน
+              item.classList.remove("active");
+          });
+          ucContent.classList.add("active"); // เพิ่ม active class ถ้าไม่มี
+      }
+  }
+});
+});
+</script>
 </html>

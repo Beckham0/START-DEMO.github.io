@@ -7,44 +7,43 @@ body {
 }
 
 .Web-header {
-    background-color: #FF710B;
-    color: white;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    position: relative;
+  background-color: #FF710B;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+  position: relative;
 }
 
 .logo a{
-    color: antiquewhite;
-    text-decoration: none;
+  color: antiquewhite;
+  text-decoration: none;
 }
 
 .logo img{
-    width: 50%;
-    border-radius: 1px;
+  width: 50%;
+  border-radius: 1px;
 }
 
 
 .window {
-    display: flex;
-    gap: 20px;
-    color: #000000;
-    text-decoration: none;
-    font-size: 15px;
-    font-weight: bold;
-    text-transform: uppercase;
+  display: flex;
+  gap: 20px;
+  color: #000000;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
 .window.active {
-    display: flex; /* แสดงเมนูเมื่อคลาส active ถูกเพิ่ม */
-    z-index: 2;
+  display: flex; /* แสดงเมนูเมื่อคลาส active ถูกเพิ่ม */
 }
 
 .menu {
-    display: flex;
-    gap: 30px;
+  display: flex;
+  gap: 50px;
 }
 
 .menu.active {
