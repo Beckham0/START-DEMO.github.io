@@ -91,7 +91,7 @@
                 <div id="block_choice_1" class="block_choice">
                     <div class="check"><span>✔</span></div>
                     <span class="c-wh">ปรับภาพลักษณ์ธุรกิจให้ทันสมัย</span>
-                    <h3 class="c-wh" style="right: 10px; position: absolute">+</h3>
+                    <h3 class="c-wh" style="right: 10px; position: absolute"><span id="minus" class="hd">-</span><span id="plus">+</span></h3>
                 </div>
                 <div style="display: block" class="uc_content" id="uc_content-1">
                     <p>ออกแบบดีไซน์เว็ปไซต์ให้ทันสมัย</p>
@@ -102,7 +102,7 @@
                 <div id="block_choice_2" class="block_choice">
                     <div class="check"><span>✔</span></div>
                     <span class="c-wh">ตอบโจทย์กลุ่มลูกค้าเป้าหมาย</span>
-                    <h3 class="c-wh" style="right: 10px; position: absolute">+</h3>
+                    <h3 class="c-wh" style="right: 10px; position: absolute"><span id="minus" class="hd">-</span><span id="plus">+</span></h3>
                 </div>
                 <div style="display: block" class="uc_content" id="uc_content-2">
                     <p>อำนวยความสะดวกให้ข้อมูลลูกค้าที่ตรงใจ</p>
@@ -113,7 +113,7 @@
                 <div id="block_choice_3" class="block_choice">
                     <div class="check"><span>✔</span></div>
                     <span class="c-wh">โครงสร้างเว็ปได้มาตรฐาน Google</span>
-                    <h3 class="c-wh" style="right: 10px; position: absolute">+</h3>
+                    <h3 class="c-wh" style="right: 10px; position: absolute"><span id="minus" class="hd">-</span><span id="plus">+</span></h3>
                 </div>
                 <div style="display: block" class="uc_content" id="uc_content-3">
                     <p>เว็ปไซต์ตอบสนองการอ่านค่า Google Index ได้อย่างดี</p>
@@ -124,7 +124,7 @@
                 <div id="block_choice_4" class="block_choice">
                     <div class="check"><span>✔</span></div>
                     <span class="c-wh">โอกาสการขายที่มากขึ้น</span>
-                    <h3 class="c-wh" style="right: 10px; position: absolute">+</h3>
+                    <h3 class="c-wh" style="right: 10px; position: absolute"><span id="minus" class="hd">-</span><span id="plus">+</span></h3>
                 </div>
                 <div style="display: block" class="uc_content" id="uc_content-4">
                     <p>โอการการทางธุรกิจหรือการขายที่มากขึ้นเหนือคู่แข่ง</p>
@@ -135,7 +135,7 @@
                 <div id="block_choice_5" class="block_choice">
                     <div class="check" ><span>✔</span></div>
                     <span class="c-wh">กลยุทธ์การช่วยให้คำปรึกษาครบวงจร</span>
-                    <h3 class="c-wh" style="right: 10px; position: absolute">+</h3>
+                    <h3 class="c-wh" style="right: 10px; position: absolute"><span id="minus" class="hd">-</span><span id="plus">+</span></h3>
                 </div>
                 <div style="display: block" class="uc_content" id="uc_content-5">
                     <p>ให้คำปรึกษาวางกลยุทธ์ ครบเครื่องเรื่อวเว็ปไซต์ธุรกิจ</p>
@@ -526,6 +526,7 @@
   const blockChoices = document.querySelectorAll('[id^="block_choice_"]');
 const uc_content = document.querySelectorAll('[id^="uc_content-"]');
 
+
 blockChoices.forEach((blockChoice) => {
   blockChoice.addEventListener("click", function (event) {
     if (this.contains(event.target)) { // ตรวจสอบว่า event.target อยู่ภายใน blockChoice หรือไม่
@@ -534,13 +535,33 @@ blockChoices.forEach((blockChoice) => {
       const ucContent = document.getElementById(targetId);
 
       if (ucContent) {
+         // รีเซ็ตเครื่องหมายทั้งหมดก่อน
+         blockChoices.forEach(bc => {
+                    const minus = bc.querySelector("#minus");
+                    const plus = bc.querySelector("#plus");
+                    if (minus && plus) {
+                        minus.classList.add("hd"); // ลบมี hd
+                        plus.classList.remove("hd"); // บวกไม่มี hd
+                    }
+                });
+
+                const minusSpan = this.querySelector("#minus");
+                const plusSpan = this.querySelector("#plus");
+
         if (ucContent.classList.contains("active")) {
           ucContent.classList.remove("active");
+          minusSpan.classList.add("hd");
+          plusSpan.classList.remove("hd");
         } else {
           uc_content.forEach((item) => {
             item.classList.remove("active");
+            minusSpan.classList.add("hd");
+            plusSpan.classList.remove("hd");
+           
           });
           ucContent.classList.add("active");
+          minusSpan.classList.remove("hd");
+          plusSpan.classList.add("hd");
         }
       }
     }
