@@ -207,8 +207,6 @@ font-style: normal;
 
 .image_woman{
   width: 50%;
-  animation-duration: 1.25s;
-  animation-name:zoomIn;
   padding: 10px;
 }
 
@@ -377,6 +375,26 @@ font-weight: 600;
   text-decoration: none;
 }
 
+#typewriter {
+  overflow: hidden; /* ซ่อนข้อความที่เกินออกมา */
+  white-space: nowrap; /* ไม่ให้ข้อความขึ้นบรรทัดใหม่ */
+  animation: typing .75s steps(7, end) forwards, /* กำหนด animation */
+  blink-caret .75s step-end infinite; /* กำหนด animation เส้นกระพริบ */
+  font-size: 50px; /* ขนาดตัวอักษร */
+
+  padding: 10px 20px;
+}
+
+@keyframes typing {
+  from { width: 10% }
+  to { width: 100% }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: #FF571999; } /* สีเส้นกระพริบ */
+}
+
 @media (max-width: 768px) {
   .card_service{
     width: 100% !important;
@@ -407,5 +425,11 @@ font-weight: 600;
   }
   .gg div{
     display:  block !important;
+  }
+  .swiper{
+    height: 250px !important;
+  }
+  #typewriter{
+    font-size: 20px !important;
   }
 }
