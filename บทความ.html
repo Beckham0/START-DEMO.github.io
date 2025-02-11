@@ -199,30 +199,28 @@
 <script src="script.js"></script>
 
 <script>
-const blockChoices = document.querySelectorAll('[id^="block_choice_"]');
+  const blockChoices = document.querySelectorAll('[id^="block_choice_"]');
 const uc_content = document.querySelectorAll('[id^="uc_content-"]');
 
 blockChoices.forEach((blockChoice) => {
-blockChoice.addEventListener("click", function (event) {
-  const targetId = event.target.id.replace(
-      "block_choice_",
-      "uc_content-"
-  );
-  const ucContent = document.getElementById(targetId);
+  blockChoice.addEventListener("click", function (event) {
+    if (this.contains(event.target)) { // ตรวจสอบว่า event.target อยู่ภายใน blockChoice หรือไม่
+      const blockChoiceId = this.id;
+      const targetId = blockChoiceId.replace("block_choice_", "uc_content-");
+      const ucContent = document.getElementById(targetId);
 
-  if (ucContent) {
-      if (ucContent.classList.contains("active")) {
-          // ตรวจสอบว่ามี active class หรือไม่
-          ucContent.classList.remove("active"); // ลบ active class ถ้ามี
-      } else {
+      if (ucContent) {
+        if (ucContent.classList.contains("active")) {
+          ucContent.classList.remove("active");
+        } else {
           uc_content.forEach((item) => {
-              // ลบ active class จาก element อื่นๆ ก่อน
-              item.classList.remove("active");
+            item.classList.remove("active");
           });
-          ucContent.classList.add("active"); // เพิ่ม active class ถ้าไม่มี
+          ucContent.classList.add("active");
+        }
       }
-  }
-});
+    }
+  });
 });
 </script>
 </html>
