@@ -152,7 +152,7 @@ font-style: normal;
     }
 }
 
-/* Show menu when active */
+
 .menu.active {
   display: flex;
 }
