@@ -134,6 +134,8 @@ a {
     align-items: center;
     padding: 10px 20px;
     position: relative;
+    position: sticky!important; top: 0px!important;
+    box-shadow: -1px 13px 20px -19px;
   }
   
   .logo a{
